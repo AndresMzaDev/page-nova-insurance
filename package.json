@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
+    "export": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "firebase:deploy": "npm run export && firebase deploy --only hosting"
   },
   "dependencies": {
     "lucide-react": "^0.552.0",
