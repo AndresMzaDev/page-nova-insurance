@@ -1,0 +1,125 @@
+{
+  "topics": [
+    {
+      "id": "what-to-do-after-car-accident",
+      "title": "Qué Hacer Después de un Accidente de Auto",
+      "titleEn": "What to Do After a Car Accident",
+      "slug": "what-to-do-after-car-accident",
+      "category": "Accidents",
+      "readTime": "8 min read",
+      "date": "Updated Nov 2025",
+      "excerpt": "Pasos esenciales para protegerte y presentar un reclamo exitoso después de un accidente vehicular.",
+      "excerptEn": "Essential steps to protect yourself and file a successful claim after a car accident.",
+      "icon": "AlertCircle"
+    },
+    {
+      "id": "understanding-your-policy",
+      "title": "Entendiendo Tu Póliza de Seguro",
+      "titleEn": "Understanding Your Insurance Policy",
+      "slug": "understanding-your-policy",
+      "category": "Policy Basics",
+      "readTime": "10 min read",
+      "date": "Updated Nov 2025",
+      "excerpt": "Aprende a leer y entender los términos de tu póliza de seguro para maximizar tus beneficios.",
+      "excerptEn": "Learn how to read and understand your insurance policy terms to maximize your coverage benefits.",
+      "icon": "FileText"
+    },
+    {
+      "id": "lower-your-premiums",
+      "title": "Cómo Reducir Tus Primas de Seguro",
+      "titleEn": "How to Lower Your Insurance Premiums",
+      "slug": "lower-your-premiums",
+      "category": "Savings",
+      "readTime": "7 min read",
+      "date": "Updated Nov 2025",
+      "excerpt": "Estrategias comprobadas para reducir costos sin sacrificar la protección que necesitas.",
+      "excerptEn": "Proven strategies to reduce costs without sacrificing the protection you need.",
+      "icon": "DollarSign"
+    },
+    {
+      "id": "types-of-coverage-explained",
+      "title": "Tipos de Cobertura Explicados",
+      "titleEn": "Types of Coverage Explained",
+      "slug": "types-of-coverage-explained",
+      "category": "Coverage",
+      "readTime": "12 min read",
+      "date": "Updated Nov 2025",
+      "excerpt": "Guía completa sobre los diferentes tipos de cobertura de seguro de auto y cuándo necesitas cada uno.",
+      "excerptEn": "Complete guide to different types of auto insurance coverage and when you need each one.",
+      "icon": "Shield"
+    },
+    {
+      "id": "choosing-right-deductible",
+      "title": "Cómo Elegir el Deducible Correcto",
+      "titleEn": "Choosing the Right Deductible",
+      "slug": "choosing-right-deductible",
+      "category": "Policy Basics",
+      "readTime": "6 min read",
+      "date": "Updated Nov 2025",
+      "excerpt": "Entiende cómo funcionan los deducibles y cómo elegir el que mejor se adapte a tu situación.",
+      "excerptEn": "Understand how deductibles work and how to choose the one that best fits your situation.",
+      "icon": "TrendingUp"
+    },
+    {
+      "id": "filing-insurance-claim",
+      "title": "Cómo Presentar un Reclamo de Seguro",
+      "titleEn": "How to File an Insurance Claim",
+      "slug": "filing-insurance-claim",
+      "category": "Claims",
+      "readTime": "9 min read",
+      "date": "Updated Nov 2025",
+      "excerpt": "Proceso paso a paso para presentar un reclamo de seguro de manera eficiente y obtener resultados rápidos.",
+      "excerptEn": "Step-by-step process to file an insurance claim efficiently and get quick results.",
+      "icon": "CheckCircle"
+    },
+    {
+      "id": "factors-affecting-premiums",
+      "title": "Factores que Afectan tus Primas",
+      "titleEn": "Factors That Affect Your Premiums",
+      "slug": "factors-affecting-premiums",
+      "category": "Policy Basics",
+      "readTime": "8 min read",
+      "date": "Updated Nov 2025",
+      "excerpt": "Descubre qué factores influyen en el costo de tu seguro y cómo puedes mejorarlos.",
+      "excerptEn": "Discover what factors influence your insurance costs and how you can improve them.",
+      "icon": "Zap"
+    },
+    {
+      "id": "teen-driver-insurance",
+      "title": "Seguro para Conductores Adolescentes",
+      "titleEn": "Insurance for Teen Drivers",
+      "slug": "teen-driver-insurance",
+      "category": "Special Situations",
+      "readTime": "7 min read",
+      "date": "Updated Nov 2025",
+      "excerpt": "Todo lo que necesitas saber sobre agregar un conductor adolescente a tu póliza de seguro.",
+      "excerptEn": "Everything you need to know about adding a teen driver to your insurance policy.",
+      "icon": "Users"
+    },
+    {
+      "id": "insurance-fraud-prevention",
+      "title": "Prevención de Fraude en Seguros",
+      "titleEn": "Insurance Fraud Prevention",
+      "slug": "insurance-fraud-prevention",
+      "category": "Safety",
+      "readTime": "6 min read",
+      "date": "Updated Nov 2025",
+      "excerpt": "Aprende a identificar y protegerte contra el fraude de seguros y estafas comunes.",
+      "excerptEn": "Learn how to identify and protect yourself against insurance fraud and common scams.",
+      "icon": "AlertCircle"
+    },
+    {
+      "id": "when-to-review-policy",
+      "title": "Cuándo Revisar Tu Póliza de Seguro",
+      "titleEn": "When to Review Your Insurance Policy",
+      "slug": "when-to-review-policy",
+      "category": "Policy Basics",
+      "readTime": "5 min read",
+      "date": "Updated Nov 2025",
+      "excerpt": "Descubre los momentos clave en los que debes revisar y actualizar tu póliza de seguro.",
+      "excerptEn": "Discover key moments when you should review and update your insurance policy.",
+      "icon": "Clock"
+    }
+  ]
+}
+
