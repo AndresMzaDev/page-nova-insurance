@@ -386,6 +386,35 @@ const LanguageContext = createContext<{
 
 const useLanguage = () => useContext(LanguageContext);
 
+// Hook para animaciones on-scroll
+const useInView = (threshold = 0.1) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = React.useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [threshold]);
+
+  return [ref, isVisible] as const;
+};
+
 const Navigation = () => {
   const { language, setLanguage, t } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -574,24 +603,33 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 text-white">
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 animate-fade-in">
               <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
               <span className="text-sm font-medium">{t.hero.badge}</span>
             </div>
 
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1
+                className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in-up"
+                style={{ animationDelay: "0.2s" }}
+              >
                 {t.hero.title}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#3a6b8a] to-[#158151]">
                   {t.hero.titleHighlight}
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+              <p
+                className="text-xl md:text-2xl text-white/90 leading-relaxed animate-fade-in-up"
+                style={{ animationDelay: "0.4s" }}
+              >
                 {t.hero.subtitle}
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div
+              className="flex flex-col sm:flex-row gap-4 animate-fade-in-up"
+              style={{ animationDelay: "0.6s" }}
+            >
               <button
                 onClick={scrollToContact}
                 className="group relative px-8 py-4 bg-white text-[#295371] rounded-xl font-bold text-lg overflow-hidden transition-all hover:scale-105 shadow-2xl"
@@ -618,7 +656,11 @@ const Hero = () => {
                 { label: t.hero.stats.customers, icon: Users },
                 { label: t.hero.stats.rating, icon: Star },
               ].map((stat, idx) => (
-                <div key={idx} className="text-center">
+                <div
+                  key={idx}
+                  className="text-center animate-fade-in-up hover:scale-110 transition-transform duration-300"
+                  style={{ animationDelay: `${0.8 + idx * 0.1}s` }}
+                >
                   <stat.icon className="h-8 w-8 mx-auto mb-2 text-white/80" />
                   <p className="font-bold text-lg">{stat.label}</p>
                 </div>
@@ -626,15 +668,18 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative hidden md:block">
+          <div className="relative hidden md:block animate-float">
             <div className="relative z-10">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-[#295371]/20 to-[#158151]/20 backdrop-blur-sm border border-white/20 p-12 transform hover:scale-105 transition-transform duration-500">
                 <Car className="w-full h-full text-white opacity-90" />
               </div>
             </div>
             {/* Decorative elements */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#295371] rounded-full blur-3xl opacity-30"></div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#158151] rounded-full blur-3xl opacity-30"></div>
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#295371] rounded-full blur-3xl opacity-30 animate-pulse-slow"></div>
+            <div
+              className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#158151] rounded-full blur-3xl opacity-30 animate-pulse-slow"
+              style={{ animationDelay: "1s" }}
+            ></div>
           </div>
         </div>
       </div>
@@ -649,6 +694,7 @@ const Hero = () => {
 
 const Features = () => {
   const { t } = useLanguage();
+  const [ref, isVisible] = useInView(0.2);
 
   const features = [
     {
@@ -678,9 +724,13 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-24 bg-gradient-to-b from-white to-gray-50" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div
+          className={`text-center mb-16 fade-in-up ${
+            isVisible ? "visible" : ""
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t.features.title}
           </h2>
@@ -692,13 +742,15 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+              className={`group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 fade-in-up stagger-${
+                index + 1
+              } ${isVisible ? "visible" : ""}`}
             >
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${feature.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity`}
               ></div>
               <div
-                className={`relative inline-flex p-4 rounded-xl bg-gradient-to-br ${feature.color} mb-6 shadow-lg`}
+                className={`relative inline-flex p-4 rounded-xl bg-gradient-to-br ${feature.color} mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}
               >
                 <feature.icon className="h-8 w-8 text-white" />
               </div>
@@ -716,6 +768,7 @@ const Features = () => {
 
 const Coverage = () => {
   const { t } = useLanguage();
+  const [ref, isVisible] = useInView(0.2);
 
   const coverages = [
     {
@@ -752,9 +805,14 @@ const Coverage = () => {
     <section
       id="coverage"
       className="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50"
+      ref={ref}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div
+          className={`text-center mb-16 fade-in-up ${
+            isVisible ? "visible" : ""
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t.coverage.title}
           </h2>
@@ -766,17 +824,19 @@ const Coverage = () => {
           {coverages.map((coverage, index) => (
             <div
               key={index}
-              className={`relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group ${
+              className={`relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group transform hover:-translate-y-2 scale-in stagger-${
+                index + 1
+              } ${isVisible ? "visible" : ""} ${
                 coverage.popular ? "ring-2 ring-[#295371]" : ""
               }`}
             >
               {coverage.popular && (
-                <div className="absolute top-0 right-0 bg-gradient-to-r from-[#295371] to-[#1e3d52] text-white px-4 py-1 text-sm font-bold rounded-bl-xl">
+                <div className="absolute top-0 right-0 bg-gradient-to-r from-[#295371] to-[#1e3d52] text-white px-4 py-1 text-sm font-bold rounded-bl-xl animate-pulse-slow">
                   Popular
                 </div>
               )}
               <div className="p-6">
-                <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-[#295371] to-[#1e3d52] mb-4 shadow-lg">
+                <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-[#295371] to-[#1e3d52] mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <coverage.icon className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -801,6 +861,7 @@ const Coverage = () => {
 
 const Testimonials = () => {
   const { t } = useLanguage();
+  const [ref, isVisible] = useInView(0.2);
 
   const testimonials = [
     { ...t.testimonials.testimonial1, rating: 5 },
@@ -809,9 +870,16 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-900 to-[#1e3d52] text-white">
+    <section
+      className="py-24 bg-gradient-to-br from-gray-900 to-[#1e3d52] text-white"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div
+          className={`text-center mb-16 fade-in-up ${
+            isVisible ? "visible" : ""
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             {t.testimonials.title}
           </h2>
@@ -823,7 +891,9 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all"
+              className={`bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:-translate-y-2 scale-in stagger-${
+                index + 1
+              } ${isVisible ? "visible" : ""}`}
             >
               <div className="flex mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
@@ -850,11 +920,16 @@ const Testimonials = () => {
 
 const About = () => {
   const { t } = useLanguage();
+  const [ref, isVisible] = useInView(0.2);
 
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="py-24 bg-white" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div
+          className={`text-center mb-12 fade-in-up ${
+            isVisible ? "visible" : ""
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t.about.title}
           </h2>
@@ -871,7 +946,11 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mt-12">
-          <div className="bg-gradient-to-br from-[#295371] to-[#1e3d52] rounded-2xl p-8 text-white">
+          <div
+            className={`bg-gradient-to-br from-[#295371] to-[#1e3d52] rounded-2xl p-8 text-white transform hover:scale-105 transition-transform duration-300 slide-in-left stagger-1 ${
+              isVisible ? "visible" : ""
+            }`}
+          >
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0 p-3 bg-white/20 rounded-xl">
                 <Shield className="h-8 w-8 text-white" />
@@ -885,7 +964,11 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-[#158151] to-[#0f6b3d] rounded-2xl p-8 text-white">
+          <div
+            className={`bg-gradient-to-br from-[#158151] to-[#0f6b3d] rounded-2xl p-8 text-white transform hover:scale-105 transition-transform duration-300 slide-in-right stagger-2 ${
+              isVisible ? "visible" : ""
+            }`}
+          >
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0 p-3 bg-white/20 rounded-xl">
                 <Award className="h-8 w-8 text-white" />
@@ -906,6 +989,7 @@ const About = () => {
 
 const Blog = () => {
   const { t } = useLanguage();
+  const [ref, isVisible] = useInView(0.2);
 
   const posts = [
     {
@@ -926,9 +1010,17 @@ const Blog = () => {
   ];
 
   return (
-    <section id="blog" className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section
+      id="blog"
+      className="py-24 bg-gradient-to-b from-gray-50 to-white"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div
+          className={`text-center mb-16 fade-in-up ${
+            isVisible ? "visible" : ""
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t.blog.title}
           </h2>
@@ -941,12 +1033,14 @@ const Blog = () => {
           {posts.map((post, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
+              className={`group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2 scale-in stagger-${
+                index + 1
+              } ${isVisible ? "visible" : ""}`}
             >
               <div
                 className={`h-48 bg-gradient-to-br ${post.gradient} flex items-center justify-center relative overflow-hidden`}
               >
-                <post.icon className="h-20 w-20 text-white opacity-90 relative z-10" />
+                <post.icon className="h-20 w-20 text-white opacity-90 relative z-10 group-hover:scale-110 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
               </div>
               <div className="p-6">
@@ -990,14 +1084,20 @@ const Blog = () => {
 
 const Contact = () => {
   const { t } = useLanguage();
+  const [ref, isVisible] = useInView(0.2);
 
   return (
     <section
       id="contact"
       className="py-24 bg-gradient-to-br from-[#1e3d52] via-[#295371] to-[#1e3d52] text-white"
+      ref={ref}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div
+          className={`text-center mb-16 fade-in-up ${
+            isVisible ? "visible" : ""
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             {t.contact.title}
           </h2>
@@ -1007,7 +1107,11 @@ const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20">
+          <div
+            className={`bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20 slide-in-left stagger-1 ${
+              isVisible ? "visible" : ""
+            }`}
+          >
             <QuoteForm
               email="andes_nmeza@hotmail.com"
               translations={{
@@ -1024,8 +1128,12 @@ const Contact = () => {
             />
           </div>
 
-          <div className="space-y-8">
-            <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all">
+          <div
+            className={`space-y-8 slide-in-right stagger-2 ${
+              isVisible ? "visible" : ""
+            }`}
+          >
+            <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 p-3 bg-gradient-to-br from-[#295371] to-[#1e3d52] rounded-xl">
                   <MapPin className="h-6 w-6 text-white" />
@@ -1040,7 +1148,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all">
+            <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 p-3 bg-gradient-to-br from-[#158151] to-[#0f6b3d] rounded-xl">
                   <Phone className="h-6 w-6 text-white" />
@@ -1057,7 +1165,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all">
+            <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 p-3 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl">
                   <Mail className="h-6 w-6 text-white" />
@@ -1074,7 +1182,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all">
+            <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 p-3 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl">
                   <Clock className="h-6 w-6 text-white" />
