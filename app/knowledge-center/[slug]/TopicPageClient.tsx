@@ -701,8 +701,10 @@ const topicContent: { [key: string]: any } = {
   },
 };
 
+import { useLanguageDetection } from "../../hooks/useLanguageDetection";
+
 export default function TopicPageClient({ slug }: { slug: string }) {
-  const [language, setLanguage] = React.useState<"en" | "es">("en");
+  const { language, setLanguage } = useLanguageDetection();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const router = useRouter();

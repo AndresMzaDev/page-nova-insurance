@@ -21,9 +21,10 @@ import {
   CheckCircle,
   Star,
 } from "lucide-react";
+import { useLanguageDetection } from "../hooks/useLanguageDetection";
 
 export default function AboutPage() {
-  const [language, setLanguage] = useState<"en" | "es">("en");
+  const { language, setLanguage } = useLanguageDetection();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 

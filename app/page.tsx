@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, createContext, useContext, useEffect } from "react";
+import { useLanguageDetection } from "./hooks/useLanguageDetection";
 import Image from "next/image";
 import Link from "next/link";
 import QuoteForm from "./components/QuoteForm";
@@ -26,6 +27,10 @@ import {
   Heart,
   TrendingUp,
   Star,
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin,
 } from "lucide-react";
 
 const translations = {
@@ -1225,9 +1230,48 @@ const Footer = () => {
             <p className="text-gray-400 mb-6 leading-relaxed">
               {t.footer.description}
             </p>
-            <div className="flex items-center space-x-2 text-blue-400">
+            <div className="flex items-center space-x-2 text-blue-400 mb-6">
               <Phone className="h-5 w-5" />
               <span className="font-semibold">(803) 555-0123</span>
+            </div>
+            {/* Social Media */}
+            <div className="flex items-center space-x-4">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5 text-white" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5 text-white" />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
+                aria-label="Twitter"
+              >
+                <Twitter className="h-5 w-5 text-white" />
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5 text-white" />
+              </a>
             </div>
           </div>
 
@@ -1280,18 +1324,18 @@ const Footer = () => {
             {t.footer.rights}
           </p>
           <div className="flex space-x-6 text-sm">
-            <a
-              href="#"
+            <Link
+              href="/terms"
               className="text-gray-400 hover:text-white transition-colors"
             >
               {t.footer.privacy}
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/terms"
               className="text-gray-400 hover:text-white transition-colors"
             >
               {t.footer.terms}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -1300,7 +1344,7 @@ const Footer = () => {
 };
 
 export default function Home() {
-  const [language, setLanguage] = useState<"en" | "es">("en");
+  const { language, setLanguage } = useLanguageDetection();
 
   return (
     <LanguageContext.Provider

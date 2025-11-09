@@ -32,8 +32,10 @@ const iconMap: { [key: string]: React.ComponentType<any> } = {
   Clock,
 };
 
+import { useLanguageDetection } from "../hooks/useLanguageDetection";
+
 export default function KnowledgeCenterPage() {
-  const [language, setLanguage] = React.useState<"en" | "es">("en");
+  const { language, setLanguage } = useLanguageDetection();
 
   const t = {
     en: {
