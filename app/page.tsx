@@ -44,8 +44,8 @@ const translations = {
     },
     hero: {
       badge: "Trusted by 10,000+ South Carolina Drivers",
-      title: "Drive with Confidence",
-      titleHighlight: "Protect What Matters",
+      title: "More than insurance:",
+      titleHighlight: "Security, support and savings for your family",
       subtitle:
         "Comprehensive auto insurance tailored to your needs. Fast claims, competitive rates, and 24/7 support.",
       cta: "Get Free Quote",
@@ -163,7 +163,7 @@ const translations = {
         phone: "Call Us",
         email: "Email Us",
         hours: "Business Hours",
-        hoursDetail: "Mon-Fri: 9AM - 6PM | Sat: 10AM - 2PM",
+        hoursDetail: "Mon-Fri: 9AM - 6PM | Sat: 9AM - 5PM | Sun: 10AM - 3PM",
       },
     },
     footer: {
@@ -213,8 +213,8 @@ const translations = {
     },
     hero: {
       badge: "Confiado por más de 10,000 conductores en Carolina del Sur",
-      title: "Conduce con Confianza",
-      titleHighlight: "Protege Lo Que Importa",
+      title: "Más que un seguro:",
+      titleHighlight: "Seguridad, respaldo y ahorro para tu familia",
       subtitle:
         "Seguro de auto integral adaptado a tus necesidades. Reclamos rápidos, tarifas competitivas y soporte 24/7.",
       cta: "Cotización Gratis",
@@ -335,7 +335,7 @@ const translations = {
         phone: "Llámanos",
         email: "Envíanos un Email",
         hours: "Horario",
-        hoursDetail: "Lun-Vie: 9AM - 6PM | Sáb: 10AM - 2PM",
+        hoursDetail: "Lun-Vie: 9AM - 6PM | Sáb: 9AM - 5PM | Dom: 10AM - 3PM",
       },
     },
     footer: {
@@ -675,8 +675,14 @@ const Hero = () => {
 
           <div className="relative hidden md:block animate-float">
             <div className="relative z-10">
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-[#295371]/20 to-[#158151]/20 backdrop-blur-sm border border-white/20 p-12 transform hover:scale-105 transition-transform duration-500">
-                <Car className="w-full h-full text-white opacity-90" />
+              <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-[#295371]/20 to-[#158151]/20 backdrop-blur-sm border border-white/20 transform hover:scale-105 transition-transform duration-500">
+                <Image
+                  src="/la-familia-esta-considerando-el-interior-de-su-futuro-automovil.jpg"
+                  alt="Family considering their future car"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
             {/* Decorative elements */}
@@ -1118,7 +1124,7 @@ const Contact = () => {
             }`}
           >
             <QuoteForm
-              email="andes_nmeza@hotmail.com"
+              email="Info@novainsurancesc.com"
               translations={{
                 name: t.contact.form.name,
                 email: t.contact.form.email,
@@ -1162,7 +1168,7 @@ const Contact = () => {
                   <h3 className="font-bold text-lg mb-1">
                     {t.contact.info.phone}
                   </h3>
-                  <p className="text-blue-100">(803) 555-0123</p>
+                  <p className="text-blue-100">803-638-4779</p>
                   <p className="text-sm text-blue-200 mt-1">
                     24/7 Emergency Line
                   </p>
@@ -1179,7 +1185,7 @@ const Contact = () => {
                   <h3 className="font-bold text-lg mb-1">
                     {t.contact.info.email}
                   </h3>
-                  <p className="text-blue-100">info@novainsurancegroup.com</p>
+                  <p className="text-blue-100">Info@novainsurancesc.com</p>
                   <p className="text-sm text-blue-200 mt-1">
                     Response within 2 hours
                   </p>
@@ -1232,7 +1238,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center space-x-2 text-blue-400 mb-6">
               <Phone className="h-5 w-5" />
-              <span className="font-semibold">(803) 555-0123</span>
+              <span className="font-semibold">803-638-4779</span>
             </div>
             {/* Social Media */}
             <div className="flex items-center space-x-4">

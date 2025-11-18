@@ -97,7 +97,7 @@ export default function TermsPage() {
             },
             help: {
               title: "AYUDA",
-              text: "Si tienes algún problema, puedes responder con la palabra clave AYUDA. También puedes pedirnos ayuda directamente a https://novainsurancegroup.com/ o ponerte en contacto con nosotros en el (803) 555-0123",
+              text: "Si tienes algún problema, puedes responder con la palabra clave AYUDA. También puedes pedirnos ayuda directamente a https://novainsurancegroup.com/ o ponerte en contacto con nosotros en el 803-638-4779",
             },
             additional: {
               title: "Opciones adicionales:",
@@ -111,8 +111,8 @@ export default function TermsPage() {
         },
       },
       contact: {
-        phone: "(803) 555-0123",
-        email: "info@novainsurancegroup.com",
+        phone: "803-638-4779",
+        email: "Info@novainsurancesc.com",
         address: "10171 Two Notch Rd, Suite C",
         city: "Columbia, SC 29229",
       },
@@ -178,7 +178,7 @@ export default function TermsPage() {
             },
             help: {
               title: "HELP",
-              text: "If you have any issues, you can reply with the keyword HELP. You can also ask us for help directly at https://novainsurancegroup.com/ or contact us at (803) 555-0123",
+              text: "If you have any issues, you can reply with the keyword HELP. You can also ask us for help directly at https://novainsurancegroup.com/ or contact us at 803-638-4779",
             },
             additional: {
               title: "Additional options:",
@@ -192,8 +192,8 @@ export default function TermsPage() {
         },
       },
       contact: {
-        phone: "(803) 555-0123",
-        email: "info@novainsurancegroup.com",
+        phone: "803-638-4779",
+        email: "Info@novainsurancesc.com",
         address: "10171 Two Notch Rd, Suite C",
         city: "Columbia, SC 29229",
       },
@@ -631,7 +631,7 @@ export default function TermsPage() {
               </p>
               <div className="flex items-center space-x-2 text-blue-400 mb-6">
                 <Phone className="h-5 w-5" />
-                <span className="font-semibold">(803) 555-0123</span>
+                <span className="font-semibold">803-638-4779</span>
               </div>
               {/* Social Media */}
               <div className="flex items-center space-x-4">

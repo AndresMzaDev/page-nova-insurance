@@ -20,7 +20,7 @@ interface QuoteFormProps {
 }
 
 export default function QuoteForm({
-  email = "andes_nmeza@hotmail.com",
+  email = "Info@novainsurancesc.com",
   translations = {
     name: "Full Name",
     email: "Email Address",
@@ -175,7 +175,7 @@ export default function QuoteForm({
           onChange={handleChange}
           required
           className={inputClasses}
-          placeholder="(803) 555-0123"
+          placeholder="803-638-4779"
         />
       </div>
 

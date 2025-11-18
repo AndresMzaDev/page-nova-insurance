@@ -762,7 +762,7 @@ export default function AboutPage() {
               </p>
               <div className="flex items-center space-x-2 text-blue-400">
                 <Phone className="h-5 w-5" />
-                <span className="font-semibold">(803) 555-0123</span>
+                <span className="font-semibold">803-638-4779</span>
               </div>
             </div>
 
