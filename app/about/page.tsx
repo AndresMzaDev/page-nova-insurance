@@ -39,7 +39,7 @@ export default function AboutPage() {
   const t = {
     en: {
       title: "About Nova Insurance Group",
-      subtitle: "Your trusted insurance partner in South Carolina since 2004",
+      subtitle: "Your trusted insurance partner in South Carolina since 2025",
       nav: {
         home: "Home",
         about: "About",
@@ -51,49 +51,32 @@ export default function AboutPage() {
         title: "South Carolina's Trusted Insurance Partner",
         subtitle: "Local expertise, national strength",
         description:
-          "For over two decades, Nova Insurance Group has been protecting South Carolina families with comprehensive, affordable auto insurance. We combine local knowledge with exceptional service to deliver peace of mind on every road.",
+          "NOVA Insurance Group was founded in 2025 in Columbia, South Carolina, with a simple but powerful purpose: to make quality insurance accessible, understandable, and welcoming for everyone.",
       },
       history: {
         title: "Our Story",
-        subtitle: "Two decades of protecting South Carolina drivers",
-        founded: "Founded in 2004",
-        foundedText:
-          "Nova Insurance Group was established with a simple mission: to make quality auto insurance accessible and affordable for every South Carolina driver. What started as a small local agency has grown into one of the state's most trusted insurance providers.",
-        growth: "Growing with Our Community",
-        growthText:
-          "Over the years, we've expanded our services while maintaining our commitment to personalized, local service. Today, we protect over 10,000 drivers across South Carolina, from Columbia to Charleston, Greenville to Myrtle Beach.",
-        milestonesTitle: "Key Milestones",
-        milestones: [
-          {
-            year: "2004",
-            title: "Company Founded",
-            description: "Nova Insurance Group opens its doors in Columbia, SC",
-          },
-          {
-            year: "2010",
-            title: "1,000 Customers",
-            description: "Reach our first major milestone serving 1,000 South Carolina families",
-          },
-          {
-            year: "2015",
-            title: "Statewide Expansion",
-            description: "Expand services to cover all of South Carolina",
-          },
-          {
-            year: "2020",
-            title: "10,000+ Customers",
-            description: "Celebrate serving over 10,000 satisfied customers",
-          },
-          {
-            year: "2024",
-            title: "20 Years of Service",
-            description: "Mark two decades of protecting South Carolina drivers",
-          },
-        ],
+        subtitle:
+          "A story of perseverance, opportunity, and commitment to our community",
+        founder: "Meet Our Founder",
+        founderText:
+          "NOVA Insurance Group was founded in 2025 in Columbia, South Carolina, with a simple but powerful purpose: to make quality insurance accessible, understandable, and welcoming for everyone. Our founder and principal agent, Alma Padilla, was born and raised in San Pedro Sula, Honduras. She immigrated to the United States as a teenager and continued her education here, graduating from Richland Northeast High School in Columbia, SC.",
+        journey: "The Journey",
+        journeyText:
+          "Right after high school, Alma began her career in the insurance industry at the age of 18. With more than five years of experience serving the Spanish-speaking community, she saw firsthand how confusing and overwhelming insurance can be—especially for individuals and families who are new to the country or unfamiliar with the system. This experience inspired the heart and mission behind NOVA.",
+        mission: "Why NOVA Exists",
+        missionText:
+          "NOVA Insurance Group was created to fill a real need: a place where people can receive education, transparency, and genuine support, not just a policy. We are driven by the belief that everyone deserves clarity, regardless of their background or experience. Our goal is to guide families, individuals, and small businesses with patience and honesty—helping them protect what matters most and move forward with confidence.",
+        today: "Today",
+        todayText:
+          "Today, NOVA stands as a growing, community-centered agency built on trust, compassion, and a deep understanding of the challenges faced by newcomers. From day one, our mission has been to create a welcoming space where people feel understood, respected, and empowered. For us, this is more than insurance. It's our story—one of perseverance, opportunity, and a commitment to making a meaningful difference in our community.",
       },
       mission: {
         title: "Our Mission",
-        text: "At Nova Insurance Group, we believe quality auto insurance should be accessible and affordable. We've spent over two decades protecting South Carolina families with transparent pricing and exceptional service. Our mission is to provide peace of mind through reliable coverage, fast claims processing, and personalized attention to every customer.",
+        text: "Our mission is to strengthen our communities by offering reliable protection, straightforward guidance, and a welcoming experience—ensuring every client feels supported at every step.",
+      },
+      vision: {
+        title: "Our Vision",
+        text: "At Nova Insurance Group, we believe quality insurance should be accessible and affordable. Our vision is to grow across South Carolina as a trusted source of clarity, transparency, and support—removing confusion and barriers to create a welcoming experience that helps people protect what matters most and move forward with confidence.",
       },
       values: {
         title: "Our Values",
@@ -123,34 +106,51 @@ export default function AboutPage() {
       },
       team: {
         title: "Expert Team",
-        text: "Our licensed agents bring decades of experience and stay current with SC regulations and industry innovations. Each team member is dedicated to understanding your unique needs and finding the perfect coverage solution.",
+        text: "Our licensed agents bring years of experience and stay current with SC regulations and industry innovations. Each team member is dedicated to understanding your unique needs and finding the perfect coverage solution.",
         stats: [
-          { number: "20+", label: "Years of Experience" },
-          { number: "15+", label: "Licensed Agents" },
-          { number: "10K+", label: "Happy Customers" },
-          { number: "24/7", label: "Support Available" },
+          { number: "5+", label: "Years of Experience" },
+          { number: "1", label: "Licensed Agent" },
+          { number: "Growing", label: "Happy Customers" },
+          { number: "7 Days", label: "Support Available" },
         ],
       },
       commitment: {
         title: "Community Commitment",
-        text: "Deeply rooted in South Carolina, we're your neighbors committed to serving our community with excellence. We sponsor local events, support community organizations, and are always here when you need us.",
+        text: "At Nova Insurance Group, we're proud to serve the communities we call home. As your neighbors, we're dedicated to giving back, supporting local initiatives, and being there when you need us. Our commitment goes beyond insurance—we're here to help our community grow and thrive.",
+        subtitle: "How We Support Our Community",
+        items: [
+          "Local event sponsorships",
+          "Support for community organizations",
+          "7-day customer support",
+          "Local expertise and guidance",
+        ],
+        closing:
+          "We're committed to serving South Carolina with trust, care, and excellence—today and every day.",
       },
       cta: {
         title: "Join the Nova Insurance Family",
-        subtitle: "Experience the difference of working with a local, trusted partner",
+        subtitle:
+          "Experience the difference of working with a local, trusted partner",
         button: "Get Your Free Quote",
       },
       footer: {
         description:
-          "Protecting South Carolina drivers with comprehensive, affordable auto insurance since 2004.",
+          "Your trusted local agency for affordable, accessible insurance in South Carolina.",
         quickLinks: "Quick Links",
-        services: "Our Services",
+        services: "Insurance Services",
         servicesList: {
           auto: "Auto Insurance",
-          liability: "Liability Coverage",
-          collision: "Collision Coverage",
-          comprehensive: "Comprehensive",
-          commercial: "Commercial Auto",
+          motorcycle: "Motorcycle Insurance",
+          commercial: "Commercial Insurance",
+          workers: "Workers' Compensation",
+          liability: "General Liability",
+          renters: "Renters Insurance",
+          homeowners: "Homeowners Insurance",
+        },
+        additionalServices: "Additional Services",
+        additionalServicesList: {
+          dmv: "DMV Services (title transfers, tags, plates, duplicates, etc.)",
+          notary: "Notary Services",
         },
         contact: "Get In Touch",
         rights: "© 2025 Nova Insurance Group. All rights reserved.",
@@ -160,7 +160,8 @@ export default function AboutPage() {
     },
     es: {
       title: "Acerca de Nova Insurance Group",
-      subtitle: "Tu socio de seguros de confianza en Carolina del Sur desde 2004",
+      subtitle:
+        "Tu socio de seguros de confianza en Carolina del Sur desde 2025",
       nav: {
         home: "Inicio",
         about: "Nosotros",
@@ -172,49 +173,32 @@ export default function AboutPage() {
         title: "El Socio de Seguros de Confianza de Carolina del Sur",
         subtitle: "Experiencia local, fortaleza nacional",
         description:
-          "Durante más de dos décadas, Nova Insurance Group ha estado protegiendo a las familias de Carolina del Sur con seguros de auto integrales y asequibles. Combinamos conocimiento local con servicio excepcional para brindar tranquilidad en cada carretera.",
+          "NOVA Insurance Group fue fundada en 2025 en Columbia, Carolina del Sur, con un propósito simple pero poderoso: hacer que el seguro de calidad sea accesible, comprensible y acogedor para todos.",
       },
       history: {
         title: "Nuestra Historia",
-        subtitle: "Dos décadas protegiendo a los conductores de Carolina del Sur",
-        founded: "Fundada en 2004",
-        foundedText:
-          "Nova Insurance Group se estableció con una misión simple: hacer que el seguro de auto de calidad sea accesible y asequible para todos los conductores de Carolina del Sur. Lo que comenzó como una pequeña agencia local ha crecido hasta convertirse en uno de los proveedores de seguros más confiables del estado.",
-        growth: "Creciendo con Nuestra Comunidad",
-        growthText:
-          "A lo largo de los años, hemos expandido nuestros servicios mientras mantenemos nuestro compromiso con el servicio personalizado y local. Hoy, protegemos a más de 10,000 conductores en toda Carolina del Sur, desde Columbia hasta Charleston, Greenville hasta Myrtle Beach.",
-        milestonesTitle: "Hitos Clave",
-        milestones: [
-          {
-            year: "2004",
-            title: "Fundación de la Empresa",
-            description: "Nova Insurance Group abre sus puertas en Columbia, SC",
-          },
-          {
-            year: "2010",
-            title: "1,000 Clientes",
-            description: "Alcanzamos nuestro primer hito importante sirviendo a 1,000 familias de Carolina del Sur",
-          },
-          {
-            year: "2015",
-            title: "Expansión Estatal",
-            description: "Expandimos servicios para cubrir todo Carolina del Sur",
-          },
-          {
-            year: "2020",
-            title: "10,000+ Clientes",
-            description: "Celebramos servir a más de 10,000 clientes satisfechos",
-          },
-          {
-            year: "2024",
-            title: "20 Años de Servicio",
-            description: "Marcamos dos décadas protegiendo a los conductores de Carolina del Sur",
-          },
-        ],
+        subtitle:
+          "Una historia de perseverancia, oportunidad y compromiso con nuestra comunidad",
+        founder: "Conoce a Nuestra Fundadora",
+        founderText:
+          "NOVA Insurance Group fue fundada en 2025 en Columbia, Carolina del Sur, con un propósito simple pero poderoso: hacer que el seguro de calidad sea accesible, comprensible y acogedor para todos. Nuestra fundadora y agente principal, Alma Padilla, nació y creció en San Pedro Sula, Honduras. Emigró a los Estados Unidos cuando era adolescente y continuó su educación aquí, graduándose de Richland Northeast High School en Columbia, SC.",
+        journey: "El Viaje",
+        journeyText:
+          "Justo después de la escuela secundaria, Alma comenzó su carrera en la industria de seguros a los 18 años. Con más de cinco años de experiencia sirviendo a la comunidad de habla hispana, vio de primera mano lo confuso y abrumador que puede ser el seguro, especialmente para individuos y familias que son nuevos en el país o no están familiarizados con el sistema. Esta experiencia inspiró el corazón y la misión detrás de NOVA.",
+        mission: "Por Qué Existe NOVA",
+        missionText:
+          "NOVA Insurance Group fue creada para llenar una necesidad real: un lugar donde las personas puedan recibir educación, transparencia y apoyo genuino, no solo una póliza. Estamos impulsados por la creencia de que todos merecen claridad, independientemente de su origen o experiencia. Nuestro objetivo es guiar a familias, individuos y pequeñas empresas con paciencia y honestidad, ayudándolos a proteger lo que más importa y avanzar con confianza.",
+        today: "Hoy",
+        todayText:
+          "Hoy, NOVA se erige como una agencia en crecimiento centrada en la comunidad, construida sobre la confianza, la compasión y una profunda comprensión de los desafíos que enfrentan los recién llegados. Desde el primer día, nuestra misión ha sido crear un espacio acogedor donde las personas se sientan comprendidas, respetadas y empoderadas. Para nosotros, esto es más que un seguro. Es nuestra historia: una de perseverancia, oportunidad y compromiso de hacer una diferencia significativa en nuestra comunidad.",
       },
       mission: {
         title: "Nuestra Misión",
-        text: "En Nova Insurance Group, creemos que el seguro de auto de calidad debe ser accesible y asequible. Hemos pasado más de dos décadas protegiendo a las familias de Carolina del Sur con precios transparentes y servicio excepcional. Nuestra misión es brindar tranquilidad a través de cobertura confiable, procesamiento rápido de reclamos y atención personalizada a cada cliente.",
+        text: "Nuestra misión es fortalecer nuestras comunidades ofreciendo protección confiable, orientación directa y una experiencia acogedora, asegurando que cada cliente se sienta apoyado en cada paso.",
+      },
+      vision: {
+        title: "Nuestra Visión",
+        text: "En Nova Insurance Group, creemos que un seguro de calidad debe ser accesible y asequible. Nuestra visión es crecer en toda Carolina del Sur como una fuente confiable de claridad, transparencia y apoyo, eliminando la confusión y las barreras para crear una experiencia acogedora que ayude a las personas a proteger lo que más importa y avanzar con confianza.",
       },
       values: {
         title: "Nuestros Valores",
@@ -244,34 +228,51 @@ export default function AboutPage() {
       },
       team: {
         title: "Equipo Experto",
-        text: "Nuestros agentes con licencia aportan décadas de experiencia y se mantienen actualizados con las regulaciones de SC y las innovaciones de la industria. Cada miembro del equipo se dedica a entender tus necesidades únicas y encontrar la solución de cobertura perfecta.",
+        text: "Nuestros agentes con licencia aportan años de experiencia y se mantienen actualizados con las regulaciones de SC y las innovaciones de la industria. Cada miembro del equipo se dedica a entender tus necesidades únicas y encontrar la solución de cobertura perfecta.",
         stats: [
-          { number: "20+", label: "Años de Experiencia" },
-          { number: "15+", label: "Agentes con Licencia" },
-          { number: "10K+", label: "Clientes Satisfechos" },
-          { number: "24/7", label: "Soporte Disponible" },
+          { number: "5+", label: "Años de Experiencia" },
+          { number: "1", label: "Agente con Licencia" },
+          { number: "Creciendo", label: "Clientes Satisfechos" },
+          { number: "7 Días", label: "Soporte Disponible" },
         ],
       },
       commitment: {
         title: "Compromiso con la Comunidad",
-        text: "Profundamente arraigados en Carolina del Sur, somos tus vecinos comprometidos a servir a nuestra comunidad con excelencia. Patrocinamos eventos locales, apoyamos organizaciones comunitarias y siempre estamos aquí cuando nos necesitas.",
+        text: "En Nova Insurance Group, estamos orgullosos de servir a las comunidades que llamamos hogar. Como tus vecinos, estamos dedicados a retribuir, apoyar iniciativas locales y estar ahí cuando nos necesites. Nuestro compromiso va más allá del seguro: estamos aquí para ayudar a nuestra comunidad a crecer y prosperar.",
+        subtitle: "Cómo Apoyamos a Nuestra Comunidad",
+        items: [
+          "Patrocinio de eventos locales",
+          "Apoyo a organizaciones comunitarias",
+          "Soporte al cliente los 7 días",
+          "Experiencia y orientación local",
+        ],
+        closing:
+          "Estamos comprometidos a servir a Carolina del Sur con confianza, cuidado y excelencia, hoy y todos los días.",
       },
       cta: {
         title: "Únete a la Familia Nova Insurance",
-        subtitle: "Experimenta la diferencia de trabajar con un socio local y de confianza",
+        subtitle:
+          "Experimenta la diferencia de trabajar con un socio local y de confianza",
         button: "Obtén Tu Cotización Gratis",
       },
       footer: {
         description:
-          "Protegiendo a conductores de Carolina del Sur con seguro de auto integral y asequible desde 2004.",
+          "Tu agencia local de confianza para seguros asequibles y accesibles en Carolina del Sur.",
         quickLinks: "Enlaces Rápidos",
-        services: "Nuestros Servicios",
+        services: "Servicios de Seguros",
         servicesList: {
           auto: "Seguro de Auto",
-          liability: "Cobertura de Responsabilidad",
-          collision: "Cobertura de Colisión",
-          comprehensive: "Cobertura Integral",
-          commercial: "Auto Comercial",
+          motorcycle: "Seguro de Motocicleta",
+          commercial: "Seguro Comercial",
+          workers: "Compensación Laboral",
+          liability: "Responsabilidad General",
+          renters: "Seguro para Inquilinos",
+          homeowners: "Seguro para Propietarios",
+        },
+        additionalServices: "Servicios Adicionales",
+        additionalServicesList: {
+          dmv: "Servicios del DMV (transferencias de título, etiquetas, placas, duplicados, etc.)",
+          notary: "Servicios Notariales",
         },
         contact: "Contáctanos",
         rights: "© 2025 Nova Insurance Group. Todos los derechos reservados.",
@@ -291,10 +292,7 @@ export default function AboutPage() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <Link
-              href="/"
-              className="flex items-center cursor-pointer group"
-            >
+            <Link href="/" className="flex items-center cursor-pointer group">
               <div className="relative h-12 w-auto">
                 <Image
                   src="/logotipo.png"
@@ -470,7 +468,7 @@ export default function AboutPage() {
           {/* Dark overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#1e3d52]/90 via-[#295371]/85 to-[#1e3d52]/90"></div>
         </div>
-        
+
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
@@ -506,78 +504,98 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
-            <div className="space-y-6">
-              <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl">
+          <div className="space-y-16 max-w-5xl mx-auto">
+            {/* Founder Section */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
+                <Image
+                  src="/amigos-felices-apilando-la-mano-de-cada-uno-de-pie-cerca-del-coche.jpg"
+                  alt="Alma Padilla - Founder"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="bg-gradient-to-br from-[#295371] to-[#1e3d52] rounded-2xl p-8 md:p-12 text-white shadow-xl order-1 md:order-2">
+                <div className="flex items-start space-x-4 mb-6">
+                  <div className="flex-shrink-0 p-3 bg-white/20 rounded-xl">
+                    <Users className="h-8 w-8 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-3xl font-bold mb-4">
+                      {t[language].history.founder}
+                    </h3>
+                    <p className="text-white/90 leading-relaxed text-lg">
+                      {t[language].history.founderText}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Journey Section */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-[#295371] mb-3">
+                  {t[language].history.journey}
+                </h3>
+                <p className="text-gray-700 leading-relaxed text-lg">
+                  {t[language].history.journeyText}
+                </p>
+              </div>
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="/Recurso 380.png"
-                  alt="Nova Insurance Office"
+                  alt="Alma Padilla's Journey"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#295371] mb-3">
-                  {t[language].history.founded}
-                </h3>
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  {t[language].history.foundedText}
-                </p>
+            </div>
+
+            {/* Mission Section */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
+                <Image
+                  src="/la-familia-esta-considerando-el-interior-de-su-futuro-automovil.jpg"
+                  alt="NOVA Mission"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="bg-gradient-to-br from-[#158151] to-[#0f6b3d] rounded-2xl p-8 md:p-12 text-white shadow-xl order-1 md:order-2">
+                <div className="flex items-start space-x-4 mb-6">
+                  <div className="flex-shrink-0 p-3 bg-white/20 rounded-xl">
+                    <Heart className="h-8 w-8 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-3xl font-bold mb-4">
+                      {t[language].history.mission}
+                    </h3>
+                    <p className="text-white/90 leading-relaxed text-lg">
+                      {t[language].history.missionText}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="space-y-6">
-              <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl">
+            {/* Today Section */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-[#295371] mb-3">
+                  {t[language].history.today}
+                </h3>
+                <p className="text-gray-700 leading-relaxed text-lg">
+                  {t[language].history.todayText}
+                </p>
+              </div>
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="/Recurso 381.png"
-                  alt="Nova Insurance Team"
+                  alt="NOVA Insurance Today"
                   fill
                   className="object-cover"
                 />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#295371] mb-3">
-                  {t[language].history.growth}
-                </h3>
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  {t[language].history.growthText}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Timeline */}
-          <div className="mt-16">
-            <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              {t[language].history.milestonesTitle}
-            </h3>
-            <div className="relative">
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#295371] to-[#158151]"></div>
-              <div className="space-y-12">
-                {t[language].history.milestones.map((milestone, index) => (
-                  <div
-                    key={index}
-                    className={`flex items-center ${
-                      index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                    }`}
-                  >
-                    <div className={`w-1/2 ${index % 2 === 0 ? "pr-8" : "pl-8"}`}>
-                      <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-[#295371]">
-                        <div className="text-3xl font-bold text-[#295371] mb-2">
-                          {milestone.year}
-                        </div>
-                        <h4 className="text-xl font-bold text-gray-900 mb-2">
-                          {milestone.title}
-                        </h4>
-                        <p className="text-gray-600">{milestone.description}</p>
-                      </div>
-                    </div>
-                    <div className="relative z-10 w-16 h-16 bg-[#295371] rounded-full flex items-center justify-center border-4 border-white shadow-lg">
-                      <CheckCircle className="h-8 w-8 text-white" />
-                    </div>
-                    <div className="w-1/2"></div>
-                  </div>
-                ))}
               </div>
             </div>
           </div>
@@ -605,10 +623,27 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Our Values - Full Width */}
+            {/* Our Vision - Full Width */}
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
               <div className="flex items-start space-x-4 mb-6">
                 <div className="flex-shrink-0 p-3 bg-gradient-to-br from-[#158151] to-[#0f6b3d] rounded-xl shadow-lg">
+                  <TrendingUp className="h-8 w-8 text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                    {t[language].vision.title}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed text-lg max-w-4xl">
+                    {t[language].vision.text}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Our Values - Full Width */}
+            <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+              <div className="flex items-start space-x-4 mb-6">
+                <div className="flex-shrink-0 p-3 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl shadow-lg">
                   <Heart className="h-8 w-8 text-white" />
                 </div>
                 <div className="flex-1">
@@ -673,9 +708,7 @@ export default function AboutPage() {
                 <h3 className="text-3xl font-bold mb-2">
                   {t[language].team.title}
                 </h3>
-                <p className="text-lg text-white/90">
-                  {t[language].team.text}
-                </p>
+                <p className="text-lg text-white/90">{t[language].team.text}</p>
               </div>
             </div>
           </div>
@@ -693,24 +726,22 @@ export default function AboutPage() {
               <p className="text-xl text-white/90 leading-relaxed mb-8">
                 {t[language].commitment.text}
               </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-[#158151]" />
-                  <span>Local event sponsorships</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-[#158151]" />
-                  <span>Community organization support</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-[#158151]" />
-                  <span>24/7 customer support</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-[#158151]" />
-                  <span>Local expertise and knowledge</span>
-                </div>
+              <h3 className="text-2xl font-bold mb-6">
+                {t[language].commitment.subtitle}
+              </h3>
+              <div className="space-y-4 mb-8">
+                {t[language].commitment.items.map(
+                  (item: string, index: number) => (
+                    <div key={index} className="flex items-center space-x-3">
+                      <CheckCircle className="h-6 w-6 text-[#158151]" />
+                      <span>{item}</span>
+                    </div>
+                  )
+                )}
               </div>
+              <p className="text-lg text-white/90 leading-relaxed">
+                {t[language].commitment.closing}
+              </p>
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
               <Image
@@ -767,42 +798,59 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="font-bold text-lg mb-4">{t[language].footer.quickLinks}</h3>
+              <h3 className="font-bold text-lg mb-4">
+                {t[language].footer.quickLinks}
+              </h3>
               <ul className="space-y-3">
-                {(["home", "about", "coverage", "blog", "contact"] as const).map(
-                  (link) => (
-                    <li key={link}>
-                      {link === "about" ? (
-                        <Link
-                          href="/about"
-                          className="text-gray-400 hover:text-white transition-colors flex items-center group"
-                        >
-                          <ChevronRight className="h-4 w-4 mr-1 group-hover:translate-x-1 transition-transform" />
-                          {t[language].nav[link]}
-                        </Link>
-                      ) : (
-                        <a
-                          href={`/#${link}`}
-                          className="text-gray-400 hover:text-white transition-colors flex items-center group"
-                        >
-                          <ChevronRight className="h-4 w-4 mr-1 group-hover:translate-x-1 transition-transform" />
-                          {t[language].nav[link]}
-                        </a>
-                      )}
-                    </li>
-                  )
-                )}
+                {(
+                  ["home", "about", "coverage", "blog", "contact"] as const
+                ).map((link) => (
+                  <li key={link}>
+                    {link === "about" ? (
+                      <Link
+                        href="/about"
+                        className="text-gray-400 hover:text-white transition-colors flex items-center group"
+                      >
+                        <ChevronRight className="h-4 w-4 mr-1 group-hover:translate-x-1 transition-transform" />
+                        {t[language].nav[link]}
+                      </Link>
+                    ) : (
+                      <a
+                        href={`/#${link}`}
+                        className="text-gray-400 hover:text-white transition-colors flex items-center group"
+                      >
+                        <ChevronRight className="h-4 w-4 mr-1 group-hover:translate-x-1 transition-transform" />
+                        {t[language].nav[link]}
+                      </a>
+                    )}
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div>
-              <h3 className="font-bold text-lg mb-4">{t[language].footer.services}</h3>
-              <ul className="space-y-3 text-gray-400">
+              <h3 className="font-bold text-lg mb-4">
+                {t[language].footer.services}
+              </h3>
+              <ul className="space-y-2 text-gray-400 mb-6">
                 {Object.values(t[language].footer.servicesList).map(
                   (service: string, idx: number) => (
                     <li key={idx} className="flex items-center">
                       <CheckCircle className="h-4 w-4 mr-2 text-blue-400" />
-                      {service}
+                      <span className="text-sm">{service}</span>
+                    </li>
+                  )
+                )}
+              </ul>
+              <h4 className="font-bold text-base mb-3 text-gray-300">
+                {t[language].footer.additionalServices}
+              </h4>
+              <ul className="space-y-2 text-gray-400">
+                {Object.values(t[language].footer.additionalServicesList).map(
+                  (service: string, idx: number) => (
+                    <li key={idx} className="flex items-center">
+                      <CheckCircle className="h-4 w-4 mr-2 text-blue-400" />
+                      <span className="text-sm">{service}</span>
                     </li>
                   )
                 )}
@@ -834,4 +882,3 @@ export default function AboutPage() {
     </div>
   );
 }
-

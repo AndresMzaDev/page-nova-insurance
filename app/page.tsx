@@ -47,42 +47,36 @@ const translations = {
       title: "More than insurance:",
       titleHighlight: "Security, support and savings for your family",
       subtitle:
-        "Comprehensive auto insurance tailored to your needs. Fast claims, competitive rates, and 24/7 support.",
+        "Comprehensive auto insurance tailored to your needs. Fast claims, competitive rates, and reliable support.",
       cta: "Get Free Quote",
       ctaSecondary: "View Coverage",
-      stats: {
-        claims: "24/7 Claims",
-        experience: "20+ Years",
-        customers: "10K+ Drivers",
-        rating: "4.9 Rating",
-      },
     },
     features: {
       title: "Why Choose Nova Insurance?",
       subtitle: "We make insurance simple, affordable, and reliable",
       feature1: {
-        title: "Lightning Fast Claims",
-        desc: "24/7 support with same-day processing. Get back on the road quickly.",
+        title: "Fast Claims",
+        desc: "Quick processing with real people ready to help—7 days a week",
       },
       feature2: {
         title: "Expert Guidance",
-        desc: "20+ years protecting South Carolina families with personalized service.",
+        desc: "Insurance explained clearly, in English or Spanish, with support you can trust.",
       },
       feature3: {
         title: "Best Rates Guaranteed",
-        desc: "Competitive pricing without compromising on coverage quality.",
+        desc: "Smart, affordable insurance solutions designed to fit your budget.",
       },
       feature4: {
         title: "Complete Protection",
-        desc: "Comprehensive coverage options for every driver and vehicle type.",
+        desc: "Coverage for your car, home, business, and more—all in one place.",
       },
     },
     coverage: {
-      title: "Coverage That Fits Your Life",
-      subtitle: "Flexible plans designed for South Carolina drivers",
+      title: "Protection Made for You",
+      subtitle: "Simple, reliable coverage that fits your needs.",
       liability: {
         title: "Liability Coverage",
-        desc: "Required protection for injuries and property damage you may cause",
+        desc: "Covers injuries and property damage you may cause to others.",
         price: "Starting at $49/mo",
       },
       collision: {
@@ -92,7 +86,7 @@ const translations = {
       },
       comprehensive: {
         title: "Comprehensive",
-        desc: "Protection from theft, weather, vandalism, and more",
+        desc: "Covers theft, weather damage, vandalism, and other damages.",
         price: "Starting at $89/mo",
       },
       uninsured: {
@@ -107,7 +101,10 @@ const translations = {
       subtitle: "Local expertise, national strength",
       mission: "Our Mission",
       missionText:
-        "At Nova Insurance Group, we believe quality auto insurance should be accessible and affordable. We've spent over two decades protecting South Carolina families with transparent pricing and exceptional service.",
+        "Our mission is to strengthen our communities by offering reliable protection, straightforward guidance, and a welcoming experience—ensuring every client feels supported at every step.",
+      vision: "Our Vision",
+      visionText:
+        "At Nova Insurance Group, we believe quality insurance should be accessible and affordable. Our vision is to grow across South Carolina as a trusted source of clarity, transparency, and support—removing confusion and barriers to create a welcoming experience that helps people protect what matters most and move forward with confidence.",
       values: "Our Values",
       valuesText:
         "Integrity, transparency, and customer-first service guide everything we do. We build lasting relationships based on trust and reliability.",
@@ -168,15 +165,22 @@ const translations = {
     },
     footer: {
       description:
-        "Protecting South Carolina drivers with comprehensive, affordable auto insurance since 2004.",
+        "Your trusted local agency for affordable, accessible insurance in South Carolina.",
       quickLinks: "Quick Links",
-      services: "Our Services",
+      services: "Insurance Services",
       servicesList: {
         auto: "Auto Insurance",
-        liability: "Liability Coverage",
-        collision: "Collision Coverage",
-        comprehensive: "Comprehensive",
-        commercial: "Commercial Auto",
+        motorcycle: "Motorcycle Insurance",
+        commercial: "Commercial Insurance",
+        workers: "Workers' Compensation",
+        liability: "General Liability",
+        renters: "Renters Insurance",
+        homeowners: "Homeowners Insurance",
+      },
+      additionalServices: "Additional Services",
+      additionalServicesList: {
+        dmv: "DMV Services (title transfers, tags, plates, duplicates, etc.)",
+        notary: "Notary Services",
       },
       contact: "Get In Touch",
       rights: "© 2025 Nova Insurance Group. All rights reserved.",
@@ -216,12 +220,12 @@ const translations = {
       title: "Más que un seguro:",
       titleHighlight: "Seguridad, respaldo y ahorro para tu familia",
       subtitle:
-        "Seguro de auto integral adaptado a tus necesidades. Reclamos rápidos, tarifas competitivas y soporte 24/7.",
+        "Seguro de auto integral adaptado a tus necesidades. Reclamos rápidos, tarifas competitivas y soporte confiable.",
       cta: "Cotización Gratis",
       ctaSecondary: "Ver Coberturas",
       stats: {
-        claims: "Reclamos 24/7",
-        experience: "Más de 20 Años",
+        claims: "Reclamos Rápidos",
+        experience: "Más de 5 Años",
         customers: "10K+ Conductores",
         rating: "Calificación 4.9",
       },
@@ -230,26 +234,25 @@ const translations = {
       title: "¿Por Qué Elegir Nova Insurance?",
       subtitle: "Hacemos que el seguro sea simple, asequible y confiable",
       feature1: {
-        title: "Reclamos Ultrarrápidos",
-        desc: "Soporte 24/7 con procesamiento el mismo día. Vuelve a la carretera rápidamente.",
+        title: "Reclamos Rápidos",
+        desc: "Procesamiento rápido con personas reales listas para ayudar, 7 días a la semana",
       },
       feature2: {
         title: "Orientación Experta",
-        desc: "Más de 20 años protegiendo familias de Carolina del Sur con servicio personalizado.",
+        desc: "Seguros explicados claramente, en inglés o español, con el apoyo en el que puedes confiar.",
       },
       feature3: {
         title: "Mejores Tarifas Garantizadas",
-        desc: "Precios competitivos sin comprometer la calidad de cobertura.",
+        desc: "Soluciones de seguros inteligentes y asequibles diseñadas para ajustarse a tu presupuesto.",
       },
       feature4: {
         title: "Protección Completa",
-        desc: "Opciones de cobertura integral para cada conductor y tipo de vehículo.",
+        desc: "Cobertura para tu auto, hogar, negocio y más, todo en un solo lugar.",
       },
     },
     coverage: {
-      title: "Cobertura Que Se Adapta a Tu Vida",
-      subtitle:
-        "Planes flexibles diseñados para conductores de Carolina del Sur",
+      title: "Protección Hecha para Ti",
+      subtitle: "Cobertura simple y confiable que se ajusta a tus necesidades.",
       liability: {
         title: "Cobertura de Responsabilidad",
         desc: "Protección requerida por lesiones y daños a la propiedad que puedas causar",
@@ -277,7 +280,10 @@ const translations = {
       subtitle: "Experiencia local, fortaleza nacional",
       mission: "Nuestra Misión",
       missionText:
-        "En Nova Insurance Group, creemos que un seguro de auto de calidad debe ser accesible y asequible. Hemos pasado más de dos décadas protegiendo familias de Carolina del Sur con precios transparentes y servicio excepcional.",
+        "Nuestra misión es fortalecer nuestras comunidades ofreciendo protección confiable, orientación directa y una experiencia acogedora, asegurando que cada cliente se sienta apoyado en cada paso.",
+      vision: "Nuestra Visión",
+      visionText:
+        "En Nova Insurance Group, creemos que un seguro de calidad debe ser accesible y asequible. Nuestra visión es crecer en toda Carolina del Sur como una fuente confiable de claridad, transparencia y apoyo, eliminando la confusión y las barreras para crear una experiencia acogedora que ayude a las personas a proteger lo que más importa y avanzar con confianza.",
       values: "Nuestros Valores",
       valuesText:
         "La integridad, la transparencia y el servicio centrado en el cliente guían todo lo que hacemos. Construimos relaciones duraderas basadas en la confianza y la confiabilidad.",
@@ -340,15 +346,22 @@ const translations = {
     },
     footer: {
       description:
-        "Protegiendo a conductores de Carolina del Sur con seguro de auto integral y asequible desde 2004.",
+        "Tu agencia local de confianza para seguros asequibles y accesibles en Carolina del Sur.",
       quickLinks: "Enlaces Rápidos",
-      services: "Nuestros Servicios",
+      services: "Servicios de Seguros",
       servicesList: {
         auto: "Seguro de Auto",
-        liability: "Cobertura de Responsabilidad",
-        collision: "Cobertura de Colisión",
-        comprehensive: "Cobertura Integral",
-        commercial: "Auto Comercial",
+        motorcycle: "Seguro de Motocicleta",
+        commercial: "Seguro Comercial",
+        workers: "Compensación Laboral",
+        liability: "Responsabilidad General",
+        renters: "Seguro para Inquilinos",
+        homeowners: "Seguro para Propietarios",
+      },
+      additionalServices: "Servicios Adicionales",
+      additionalServicesList: {
+        dmv: "Servicios del DMV (transferencias de título, etiquetas, placas, duplicados, etc.)",
+        notary: "Servicios Notariales",
       },
       contact: "Contáctanos",
       rights: "© 2025 Nova Insurance Group. Todos los derechos reservados.",
@@ -593,25 +606,76 @@ const Hero = () => {
     if (element) element.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Testimonial rotation logic
+  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentTestimonialIndex((prev) => {
+          // Random index between 0 and 2
+          let next = Math.floor(Math.random() * 3);
+          // Ensure we don't pick the same one twice in a row if possible
+          if (next === prev) next = (next + 1) % 3;
+          return next;
+        });
+        setIsAnimating(false);
+      }, 500);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const testimonials = [
+    { ...t.testimonials.testimonial1, rating: "5.0" },
+    { ...t.testimonials.testimonial2, rating: "5.0" },
+    { ...t.testimonials.testimonial3, rating: "5.0" },
+  ];
+
+  const currentTestimonial = testimonials[currentTestimonialIndex];
+
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#1e3d52] via-[#295371] to-[#1e3d52]"
+      className="relative min-h-screen flex items-center overflow-hidden"
     >
-      {/* Animated Background */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#295371] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#158151] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-[#158151] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/la-familia-esta-considerando-el-interior-de-su-futuro-automovil.jpg"
+          alt="Family considering their future car"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1e3d52]/95 via-[#295371]/80 to-[#1e3d52]/30"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
+      <div className="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 text-white">
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 animate-fade-in">
-              <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-              <span className="text-sm font-medium">{t.hero.badge}</span>
-            </div>
+          <div className="space-y-8 text-white max-w-3xl">
+            <button
+              onClick={() => {
+                const element = document.getElementById("testimonials");
+                if (element) element.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="inline-flex items-start gap-3 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-2xl border border-white/20 animate-fade-in hover:bg-white/20 transition-colors cursor-pointer max-w-md text-left"
+            >
+              <div className="flex items-center space-x-1 bg-yellow-400/20 px-2 py-0.5 rounded text-yellow-400 shrink-0 mt-0.5">
+                <Star className="h-3 w-3 fill-yellow-400" />
+                <span className="text-[10px] font-bold">
+                  {currentTestimonial.rating}
+                </span>
+              </div>
+              <span
+                className={`text-xs font-medium text-white/90 line-clamp-2 leading-relaxed transition-opacity duration-500 ${
+                  isAnimating ? "opacity-0" : "opacity-100"
+                }`}
+              >
+                &ldquo;{currentTestimonial.text}&rdquo;
+              </span>
+            </button>
 
             <div className="space-y-4">
               <h1
@@ -619,16 +683,10 @@ const Hero = () => {
                 style={{ animationDelay: "0.2s" }}
               >
                 {t.hero.title}
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#3a6b8a] to-[#158151]">
+                <span className="block text-white drop-shadow-lg">
                   {t.hero.titleHighlight}
                 </span>
               </h1>
-              <p
-                className="text-xl md:text-2xl text-white/90 leading-relaxed animate-fade-in-up"
-                style={{ animationDelay: "0.4s" }}
-              >
-                {t.hero.subtitle}
-              </p>
             </div>
 
             <div
@@ -652,51 +710,12 @@ const Hero = () => {
                 {t.hero.ctaSecondary}
               </button>
             </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8">
-              {[
-                { label: t.hero.stats.claims, icon: Clock },
-                { label: t.hero.stats.experience, icon: Award },
-                { label: t.hero.stats.customers, icon: Users },
-                { label: t.hero.stats.rating, icon: Star },
-              ].map((stat, idx) => (
-                <div
-                  key={idx}
-                  className="text-center animate-fade-in-up hover:scale-110 transition-transform duration-300"
-                  style={{ animationDelay: `${0.8 + idx * 0.1}s` }}
-                >
-                  <stat.icon className="h-8 w-8 mx-auto mb-2 text-white/80" />
-                  <p className="font-bold text-lg">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="relative hidden md:block animate-float">
-            <div className="relative z-10">
-              <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-[#295371]/20 to-[#158151]/20 backdrop-blur-sm border border-white/20 transform hover:scale-105 transition-transform duration-500">
-                <Image
-                  src="/la-familia-esta-considerando-el-interior-de-su-futuro-automovil.jpg"
-                  alt="Family considering their future car"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-            </div>
-            {/* Decorative elements */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#295371] rounded-full blur-3xl opacity-30 animate-pulse-slow"></div>
-            <div
-              className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#158151] rounded-full blur-3xl opacity-30 animate-pulse-slow"
-              style={{ animationDelay: "1s" }}
-            ></div>
           </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
         <ChevronRight className="h-8 w-8 text-white rotate-90" />
       </div>
     </section>
@@ -882,6 +901,7 @@ const Testimonials = () => {
 
   return (
     <section
+      id="testimonials"
       className="py-24 bg-gradient-to-br from-gray-900 to-[#1e3d52] text-white"
       ref={ref}
     >
@@ -956,7 +976,7 @@ const About = () => {
           </Link>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mt-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           <div
             className={`bg-gradient-to-br from-[#295371] to-[#1e3d52] rounded-2xl p-8 text-white transform hover:scale-105 transition-transform duration-300 slide-in-left stagger-1 ${
               isVisible ? "visible" : ""
@@ -976,7 +996,25 @@ const About = () => {
           </div>
 
           <div
-            className={`bg-gradient-to-br from-[#158151] to-[#0f6b3d] rounded-2xl p-8 text-white transform hover:scale-105 transition-transform duration-300 slide-in-right stagger-2 ${
+            className={`bg-gradient-to-br from-[#158151] to-[#0f6b3d] rounded-2xl p-8 text-white transform hover:scale-105 transition-transform duration-300 slide-in-up stagger-2 ${
+              isVisible ? "visible" : ""
+            }`}
+          >
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 p-3 bg-white/20 rounded-xl">
+                <TrendingUp className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-3">{t.about.vision}</h3>
+                <p className="text-white/90 leading-relaxed">
+                  {t.about.visionText}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className={`bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-8 text-white transform hover:scale-105 transition-transform duration-300 slide-in-right stagger-3 ${
               isVisible ? "visible" : ""
             }`}
           >
@@ -1169,9 +1207,7 @@ const Contact = () => {
                     {t.contact.info.phone}
                   </h3>
                   <p className="text-blue-100">803-638-4779</p>
-                  <p className="text-sm text-blue-200 mt-1">
-                    24/7 Emergency Line
-                  </p>
+                  <p className="text-sm text-blue-200 mt-1">Emergency Line</p>
                 </div>
               </div>
             </div>
@@ -1204,7 +1240,7 @@ const Contact = () => {
                   </h3>
                   <p className="text-blue-100">{t.contact.info.hoursDetail}</p>
                   <p className="text-sm text-blue-200 mt-1">
-                    Claims support available 24/7
+                    Claims support available
                   </p>
                 </div>
               </div>
@@ -1312,12 +1348,25 @@ const Footer = () => {
 
           <div>
             <h3 className="font-bold text-lg mb-4">{t.footer.services}</h3>
-            <ul className="space-y-3 text-gray-400">
+            <ul className="space-y-2 text-gray-400 mb-6">
               {Object.values(t.footer.servicesList).map(
                 (service: string, idx: number) => (
                   <li key={idx} className="flex items-center">
                     <CheckCircle className="h-4 w-4 mr-2 text-blue-400" />
-                    {service}
+                    <span className="text-sm">{service}</span>
+                  </li>
+                )
+              )}
+            </ul>
+            <h4 className="font-bold text-base mb-3 text-gray-300">
+              {t.footer.additionalServices}
+            </h4>
+            <ul className="space-y-2 text-gray-400">
+              {Object.values(t.footer.additionalServicesList).map(
+                (service: string, idx: number) => (
+                  <li key={idx} className="flex items-center">
+                    <CheckCircle className="h-4 w-4 mr-2 text-blue-400" />
+                    <span className="text-sm">{service}</span>
                   </li>
                 )
               )}

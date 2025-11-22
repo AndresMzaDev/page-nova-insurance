@@ -97,7 +97,7 @@ export default function TermsPage() {
             },
             help: {
               title: "AYUDA",
-              text: "Si tienes algún problema, puedes responder con la palabra clave AYUDA. También puedes pedirnos ayuda directamente a https://novainsurancegroup.com/ o ponerte en contacto con nosotros en el 803-638-4779",
+              text: "Si tienes algún problema, puedes responder con la palabra clave HELP. También puedes pedirnos ayuda directamente a https://novainsurancegroup.com/ o ponerte en contacto con nosotros en el (803) 555-0123",
             },
             additional: {
               title: "Opciones adicionales:",
@@ -105,14 +105,14 @@ export default function TermsPage() {
             },
             standard: {
               title: "Información estándar sobre mensajería:",
-              text: "Pueden aplicarse tarifas de mensajes y datos. Puede darse de baja en cualquier momento enviando un mensaje de texto con la palabra «STOP». Para obtener ayuda, envíe un mensaje de texto a \"HELP\" o visite nuestra página de Política de Privacidad y Términos y Condiciones https://novainsurancegroup.com/terms La frecuencia de los mensajes puede variar.",
+              text: 'Pueden aplicarse tarifas de mensajes y datos. Puede darse de baja en cualquier momento enviando un mensaje de texto con la palabra «STOP». Para obtener ayuda, envíe un mensaje de texto a "HELP" o visite nuestra página de Política de Privacidad y Términos y Condiciones https://novainsurancegroup.com/terms La frecuencia de los mensajes puede variar.',
             },
           },
         },
       },
       contact: {
-        phone: "803-638-4779",
-        email: "Info@novainsurancesc.com",
+        phone: "(803) 555-0123",
+        email: "info@novainsurancegroup.com",
         address: "10171 Two Notch Rd, Suite C",
         city: "Columbia, SC 29229",
       },
@@ -174,11 +174,11 @@ export default function TermsPage() {
             },
             unsubscribe: {
               title: "Unsubscribe method",
-              text: "You can opt out of receiving SMS messages at any time. To do so, simply reply \"STOP\" to any SMS message you receive. Alternatively, you can contact us directly to request removal from our messaging list.",
+              text: 'You can opt out of receiving SMS messages at any time. To do so, simply reply "STOP" to any SMS message you receive. Alternatively, you can contact us directly to request removal from our messaging list.',
             },
             help: {
               title: "HELP",
-              text: "If you have any issues, you can reply with the keyword HELP. You can also ask us for help directly at https://novainsurancegroup.com/ or contact us at 803-638-4779",
+              text: "If you have any issues, you can reply with the keyword HELP. You can also ask us for help directly at https://novainsurancegroup.com/ or contact us at (803) 555-0123",
             },
             additional: {
               title: "Additional options:",
@@ -186,14 +186,14 @@ export default function TermsPage() {
             },
             standard: {
               title: "Standard messaging information:",
-              text: "Message and data rates may apply. You can unsubscribe at any time by sending a text message with the word \"STOP\". For help, send a text message to \"HELP\" or visit our Privacy Policy and Terms and Conditions page https://novainsurancegroup.com/terms Message frequency may vary.",
+              text: 'Message and data rates may apply. You can unsubscribe at any time by sending a text message with the word "STOP". For help, send a text message to "HELP" or visit our Privacy Policy and Terms and Conditions page https://novainsurancegroup.com/terms Message frequency may vary.',
             },
           },
         },
       },
       contact: {
-        phone: "803-638-4779",
-        email: "Info@novainsurancesc.com",
+        phone: "(803) 555-0123",
+        email: "info@novainsurancegroup.com",
         address: "10171 Two Notch Rd, Suite C",
         city: "Columbia, SC 29229",
       },
@@ -212,10 +212,7 @@ export default function TermsPage() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <Link
-              href="/"
-              className="flex items-center cursor-pointer group"
-            >
+            <Link href="/" className="flex items-center cursor-pointer group">
               <div className="relative h-12 w-auto">
                 <Image
                   src="/logotipo.png"
@@ -377,7 +374,7 @@ export default function TermsPage() {
           {/* Dark overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#1e3d52]/90 via-[#295371]/85 to-[#1e3d52]/90"></div>
         </div>
-        
+
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
@@ -387,9 +384,7 @@ export default function TermsPage() {
             <ArrowLeft className="h-5 w-5 mr-2" />
             {language === "en" ? "Back to home" : "Volver al inicio"}
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            {t.title}
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.title}</h1>
         </div>
       </header>
 
@@ -570,7 +565,9 @@ export default function TermsPage() {
           {/* Contact Information */}
           <div className="mt-12 bg-gradient-to-br from-[#295371] to-[#1e3d52] rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-6">
-              {language === "en" ? "Contact Information" : "Información de Contacto"}
+              {language === "en"
+                ? "Contact Information"
+                : "Información de Contacto"}
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="flex items-start space-x-4">
@@ -626,12 +623,12 @@ export default function TermsPage() {
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
                 {language === "en"
-                  ? "Protecting South Carolina drivers with comprehensive, affordable auto insurance since 2004."
-                  : "Protegiendo a conductores de Carolina del Sur con seguro de auto integral y asequible desde 2004."}
+                  ? "Your trusted local agency for affordable, accessible insurance in South Carolina."
+                  : "Tu agencia local de confianza para seguros asequibles y accesibles en Carolina del Sur."}
               </p>
               <div className="flex items-center space-x-2 text-blue-400 mb-6">
                 <Phone className="h-5 w-5" />
-                <span className="font-semibold">803-638-4779</span>
+                <span className="font-semibold">(803) 555-0123</span>
               </div>
               {/* Social Media */}
               <div className="flex items-center space-x-4">
@@ -679,55 +676,82 @@ export default function TermsPage() {
                 {language === "en" ? "Quick Links" : "Enlaces Rápidos"}
               </h3>
               <ul className="space-y-3">
-                {(["home", "about", "coverage", "blog", "contact"] as const).map(
-                  (link) => (
-                    <li key={link}>
-                      {link === "about" ? (
-                        <Link
-                          href="/about"
-                          className="text-gray-400 hover:text-white transition-colors flex items-center group"
-                        >
-                          <ChevronRight className="h-4 w-4 mr-1 group-hover:translate-x-1 transition-transform" />
-                          {t.nav[link]}
-                        </Link>
-                      ) : (
-                        <a
-                          href={`#${link}`}
-                          className="text-gray-400 hover:text-white transition-colors flex items-center group"
-                        >
-                          <ChevronRight className="h-4 w-4 mr-1 group-hover:translate-x-1 transition-transform" />
-                          {t.nav[link]}
-                        </a>
-                      )}
-                    </li>
-                  )
-                )}
+                {(
+                  ["home", "about", "coverage", "blog", "contact"] as const
+                ).map((link) => (
+                  <li key={link}>
+                    {link === "about" ? (
+                      <Link
+                        href="/about"
+                        className="text-gray-400 hover:text-white transition-colors flex items-center group"
+                      >
+                        <ChevronRight className="h-4 w-4 mr-1 group-hover:translate-x-1 transition-transform" />
+                        {t.nav[link]}
+                      </Link>
+                    ) : (
+                      <a
+                        href={`#${link}`}
+                        className="text-gray-400 hover:text-white transition-colors flex items-center group"
+                      >
+                        <ChevronRight className="h-4 w-4 mr-1 group-hover:translate-x-1 transition-transform" />
+                        {t.nav[link]}
+                      </a>
+                    )}
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div>
               <h3 className="font-bold text-lg mb-4">
-                {language === "en" ? "Our Services" : "Nuestros Servicios"}
+                {language === "en"
+                  ? "Insurance Services"
+                  : "Servicios de Seguros"}
               </h3>
-              <ul className="space-y-3 text-gray-400">
+              <ul className="space-y-2 text-gray-400 mb-6">
                 {language === "en"
                   ? [
                       "Auto Insurance",
-                      "Liability Coverage",
-                      "Collision Coverage",
-                      "Comprehensive",
-                      "Commercial Auto",
+                      "Motorcycle Insurance",
+                      "Commercial Insurance",
+                      "Workers' Compensation",
+                      "General Liability",
+                      "Renters Insurance",
+                      "Homeowners Insurance",
                     ]
                   : [
                       "Seguro de Auto",
-                      "Cobertura de Responsabilidad",
-                      "Cobertura de Colisión",
-                      "Cobertura Integral",
-                      "Auto Comercial",
+                      "Seguro de Motocicleta",
+                      "Seguro Comercial",
+                      "Compensación Laboral",
+                      "Responsabilidad General",
+                      "Seguro para Inquilinos",
+                      "Seguro para Propietarios",
                     ].map((service, idx) => (
                       <li key={idx} className="flex items-center">
                         <CheckCircle className="h-4 w-4 mr-2 text-blue-400" />
-                        {service}
+                        <span className="text-sm">{service}</span>
+                      </li>
+                    ))}
+              </ul>
+              <h4 className="font-bold text-base mb-3 text-gray-300">
+                {language === "en"
+                  ? "Additional Services"
+                  : "Servicios Adicionales"}
+              </h4>
+              <ul className="space-y-2 text-gray-400">
+                {language === "en"
+                  ? [
+                      "DMV Services (title transfers, tags, plates, duplicates, etc.)",
+                      "Notary Services",
+                    ]
+                  : [
+                      "Servicios del DMV (transferencias de título, etiquetas, placas, duplicados, etc.)",
+                      "Servicios Notariales",
+                    ].map((service, idx) => (
+                      <li key={idx} className="flex items-center">
+                        <CheckCircle className="h-4 w-4 mr-2 text-blue-400" />
+                        <span className="text-sm">{service}</span>
                       </li>
                     ))}
               </ul>
@@ -746,13 +770,17 @@ export default function TermsPage() {
                 href="/terms"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                {language === "en" ? "Privacy Policy" : "Política de Privacidad"}
+                {language === "en"
+                  ? "Privacy Policy"
+                  : "Política de Privacidad"}
               </Link>
               <Link
                 href="/terms"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                {language === "en" ? "Terms of Service" : "Términos de Servicio"}
+                {language === "en"
+                  ? "Terms of Service"
+                  : "Términos de Servicio"}
               </Link>
             </div>
           </div>
@@ -761,4 +789,3 @@ export default function TermsPage() {
     </div>
   );
 }
-
