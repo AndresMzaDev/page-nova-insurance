@@ -151,7 +151,7 @@ export default function KnowledgeCenterPage() {
             <Link href="/" className="flex items-center cursor-pointer group">
               <div className="relative h-12 w-auto">
                 <Image
-                  src="/Recurso 1.svg"
+                  src={scrolled ? "/logotipo.png" : "/Recurso 1.svg"}
                   alt="Nova Insurance Group"
                   width={180}
                   height={48}
