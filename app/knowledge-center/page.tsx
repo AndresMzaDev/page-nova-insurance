@@ -151,7 +151,7 @@ export default function KnowledgeCenterPage() {
             <Link href="/" className="flex items-center cursor-pointer group">
               <div className="relative h-12 w-auto">
                 <Image
-                  src="/logotipo.png"
+                  src="/Recurso 1.svg"
                   alt="Nova Insurance Group"
                   width={180}
                   height={48}
@@ -342,17 +342,31 @@ export default function KnowledgeCenterPage() {
                   href={`/knowledge-center/${topic.slug}`}
                   className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
                 >
-                  <div className="h-48 bg-gradient-to-br from-[#295371] to-[#158151] flex items-center justify-center relative overflow-hidden">
-                    <Icon className="h-20 w-20 text-white opacity-90 relative z-10" />
-                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                  <div className="h-48 relative overflow-hidden bg-gray-200">
+                    {/* @ts-ignore */}
+                    {topic.image ? (
+                      <Image
+                        /* @ts-ignore */
+                        src={topic.image}
+                        alt={language === "en" ? topic.titleEn : topic.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#295371] to-[#158151] flex items-center justify-center">
+                        <Icon className="h-20 w-20 text-white opacity-90 relative z-10" />
+                      </div>
+                    )}
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 z-10"></div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-xs text-gray-500 font-medium">
-                        {topic.category}
+                        {/* @ts-ignore */}
+                        {language === "en" ? topic.categoryEn : topic.categoryEs}
                       </span>
                       <span className="text-xs bg-[#295371]/10 text-[#295371] px-2 py-1 rounded-full font-medium">
-                        {topic.readTime}
+                        {topic.readTime} {t[language].minRead}
                       </span>
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#295371] transition-colors">

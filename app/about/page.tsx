@@ -46,6 +46,7 @@ export default function AboutPage() {
         coverage: "Coverage",
         blog: "Resources",
         contact: "Contact",
+        getQuote: "Get Free Quote",
       },
       hero: {
         title: "South Carolina's Trusted Insurance Partner",
@@ -168,6 +169,7 @@ export default function AboutPage() {
         coverage: "Coberturas",
         blog: "Recursos",
         contact: "Contacto",
+        getQuote: "Cotización Gratis",
       },
       hero: {
         title: "El Socio de Seguros de Confianza de Carolina del Sur",
@@ -376,7 +378,7 @@ export default function AboutPage() {
                   href="/#contact"
                   className="px-6 py-2.5 bg-[#295371] text-white rounded-lg font-semibold hover:bg-[#1e3d52] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
-                  Get Free Quote
+                  {t[language].nav.getQuote}
                 </Link>
               </div>
             </div>
@@ -447,7 +449,7 @@ export default function AboutPage() {
                 onClick={() => setIsMenuOpen(false)}
                 className="w-full px-4 py-3 bg-[#295371] text-white rounded-lg font-semibold hover:bg-[#1e3d52] transition-all block text-center"
               >
-                Get Free Quote
+                {t[language].nav.getQuote}
               </Link>
             </div>
           </div>
@@ -509,7 +511,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
                 <Image
-                  src="/amigos-felices-apilando-la-mano-de-cada-uno-de-pie-cerca-del-coche.jpg"
+                  src="/amigos-de-vista-lateral-dando-un-paseo-un-nuevo-destino.jpg"
                   alt="Alma Padilla - Founder"
                   fill
                   className="object-cover"
@@ -544,7 +546,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/Recurso 380.png"
+                  src="/Imgenes Nova Isurance/Cuándo Revisar Tu Póliza .jpg"
                   alt="Alma Padilla's Journey"
                   fill
                   className="object-cover"
@@ -591,7 +593,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/Recurso 381.png"
+                  src="/Imgenes Nova Isurance/Factores que Afectan tus Primas.jpg"
                   alt="NOVA Insurance Today"
                   fill
                   className="object-cover"
@@ -698,7 +700,7 @@ export default function AboutPage() {
 
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/Recurso 380.png"
+              src="/Imgenes Nova Isurance/Entendiendo Tu Póliza de Seguro.jpg"
               alt="Nova Insurance Team"
               fill
               className="object-cover"
@@ -745,7 +747,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/Recurso 381.png"
+                src="/Imgenes Nova Isurance/Seguro para Conductores Adolescentes.jpg"
                 alt="Community Commitment"
                 fill
                 className="object-cover"

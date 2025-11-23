@@ -99,6 +99,7 @@ const translations = {
     about: {
       title: "South Carolina's Trusted Insurance Partner",
       subtitle: "Local expertise, national strength",
+      learnMore: "Learn More About Us",
       mission: "Our Mission",
       missionText:
         "Our mission is to strengthen our communities by offering reliable protection, straightforward guidance, and a welcoming experience—ensuring every client feels supported at every step.",
@@ -119,6 +120,7 @@ const translations = {
       title: "Insurance Knowledge Center",
       subtitle: "Expert tips and guides to help you make informed decisions",
       readMore: "Read Guide",
+      viewAll: "View All Articles",
       post1: {
         title: "What to Do After a Car Accident",
         excerpt:
@@ -278,6 +280,7 @@ const translations = {
     about: {
       title: "El Socio de Seguros de Confianza de Carolina del Sur",
       subtitle: "Experiencia local, fortaleza nacional",
+      learnMore: "Conoce Más Sobre Nosotros",
       mission: "Nuestra Misión",
       missionText:
         "Nuestra misión es fortalecer nuestras comunidades ofreciendo protección confiable, orientación directa y una experiencia acogedora, asegurando que cada cliente se sienta apoyado en cada paso.",
@@ -299,6 +302,7 @@ const translations = {
       subtitle:
         "Consejos y guías de expertos para ayudarte a tomar decisiones informadas",
       readMore: "Leer Guía",
+      viewAll: "Ver todos los artículos",
       post1: {
         title: "Qué Hacer Después de un Accidente",
         excerpt:
@@ -474,7 +478,7 @@ const Navigation = () => {
           >
             <div className="relative h-12 w-auto">
               <Image
-                src="/logotipo.png"
+                src="/Recurso 1.svg"
                 alt="Nova Insurance Group"
                 width={180}
                 height={48}
@@ -971,7 +975,7 @@ const About = () => {
             href="/about"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#295371] to-[#1e3d52] text-white rounded-xl font-bold text-lg hover:from-[#1e3d52] hover:to-[#295371] transition-all transform hover:scale-105 shadow-lg"
           >
-            Learn More About Us
+            {t.about.learnMore}
             <ChevronRight className="ml-2 h-5 w-5" />
           </Link>
         </div>
@@ -1045,16 +1049,20 @@ const Blog = () => {
       ...t.blog.post1,
       icon: AlertCircle,
       gradient: "from-red-500 to-pink-600",
+      image:
+        "/Imgenes Nova Isurance/Qué Hacer Después de un Accidente de Auto.jpg",
     },
     {
       ...t.blog.post2,
       icon: FileText,
       gradient: "from-[#295371] to-[#1e3d52]",
+      image: "/Imgenes Nova Isurance/Entendiendo Tu Póliza de Seguro.jpg",
     },
     {
       ...t.blog.post3,
       icon: DollarSign,
       gradient: "from-[#158151] to-[#0f6b3d]",
+      image: "/Imgenes Nova Isurance/Cómo Reducir Tus Primas de Seguro.jpg",
     },
   ];
 
@@ -1086,11 +1094,14 @@ const Blog = () => {
                 index + 1
               } ${isVisible ? "visible" : ""}`}
             >
-              <div
-                className={`h-48 bg-gradient-to-br ${post.gradient} flex items-center justify-center relative overflow-hidden`}
-              >
-                <post.icon className="h-20 w-20 text-white opacity-90 relative z-10 group-hover:scale-110 transition-transform duration-300" />
-                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+              <div className="h-48 relative overflow-hidden bg-gray-200">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 z-10"></div>
               </div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
@@ -1122,7 +1133,7 @@ const Blog = () => {
             href="/knowledge-center"
             className="inline-flex items-center text-[#295371] font-semibold hover:text-[#1e3d52] transition-colors group"
           >
-            Ver todos los artículos
+            {t.blog.viewAll}
             <ChevronRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

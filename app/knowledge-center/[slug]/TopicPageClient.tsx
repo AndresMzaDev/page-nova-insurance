@@ -853,6 +853,7 @@ const navTranslations = {
     contact: "Contact",
     backToKnowledgeCenter: "Back to Knowledge Center",
     getQuote: "Get Free Quote",
+    minRead: "min read",
     footer: {
       description:
         "Your trusted local agency for affordable, accessible insurance in South Carolina.",
@@ -886,6 +887,7 @@ const navTranslations = {
     contact: "Contacto",
     backToKnowledgeCenter: "Volver al Centro de Conocimiento",
     getQuote: "Cotización Gratis",
+    minRead: "min de lectura",
     footer: {
       description:
         "Tu agencia local de confianza para seguros asequibles y accesibles en Carolina del Sur.",
@@ -953,7 +955,7 @@ export default function TopicPageClient({ slug }: { slug: string }) {
             <Link href="/" className="flex items-center cursor-pointer group">
               <div className="relative h-12 w-auto">
                 <Image
-                  src="/logotipo.png"
+                  src="/Recurso 1.svg"
                   alt="Nova Insurance Group"
                   width={180}
                   height={48}
@@ -1127,8 +1129,13 @@ export default function TopicPageClient({ slug }: { slug: string }) {
                 <Icon className="h-8 w-8 text-white" />
               </div>
               <div>
-                <span className="text-sm text-white/80">{topic.category}</span>
-                <p className="text-xs text-white/60">{topic.readTime}</p>
+                <span className="text-sm text-white/80">
+                  {/* @ts-ignore */}
+                  {language === "en" ? topic.categoryEn : topic.categoryEs}
+                </span>
+                <p className="text-xs text-white/60">
+                  {topic.readTime} {navTranslations[language].minRead}
+                </p>
               </div>
             </div>
           </div>
