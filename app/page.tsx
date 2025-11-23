@@ -154,6 +154,10 @@ const translations = {
         sending: "Sending...",
         success: "Thank you! We'll contact you within 24 hours.",
         error: "Something went wrong. Please try again.",
+        namePlaceholder: "John Doe",
+        emailPlaceholder: "john@example.com",
+        phonePlaceholder: "803-638-4779",
+        messagePlaceholder: "Tell us about your insurance needs...",
       },
       info: {
         address: "Visit Our Office",
@@ -163,6 +167,9 @@ const translations = {
         email: "Email Us",
         hours: "Business Hours",
         hoursDetail: "Mon-Fri: 9AM - 6PM | Sat: 9AM - 5PM | Sun: 10AM - 3PM",
+        emergency: "Emergency Line",
+        response: "Response within 2 hours",
+        availability: "Claims support available",
       },
     },
     footer: {
@@ -337,6 +344,10 @@ const translations = {
         sending: "Enviando...",
         success: "¡Gracias! Te contactaremos en 24 horas.",
         error: "Algo salió mal. Por favor intenta de nuevo.",
+        namePlaceholder: "Juan Pérez",
+        emailPlaceholder: "juan@ejemplo.com",
+        phonePlaceholder: "803-638-4779",
+        messagePlaceholder: "Cuéntanos sobre tus necesidades de seguro...",
       },
       info: {
         address: "Visita Nuestra Oficina",
@@ -346,6 +357,9 @@ const translations = {
         email: "Envíanos un Email",
         hours: "Horario",
         hoursDetail: "Lun-Vie: 9AM - 6PM | Sáb: 9AM - 5PM | Dom: 10AM - 3PM",
+        emergency: "Línea de Emergencia",
+        response: "Respuesta en 2 horas",
+        availability: "Soporte de reclamos disponible",
       },
     },
     footer: {
@@ -1183,6 +1197,10 @@ const Contact = () => {
                 sending: t.contact.form.sending,
                 success: t.contact.form.success,
                 error: t.contact.form.error,
+                namePlaceholder: t.contact.form.namePlaceholder,
+                emailPlaceholder: t.contact.form.emailPlaceholder,
+                phonePlaceholder: t.contact.form.phonePlaceholder,
+                messagePlaceholder: t.contact.form.messagePlaceholder,
               }}
               variant="dark"
             />
@@ -1218,7 +1236,9 @@ const Contact = () => {
                     {t.contact.info.phone}
                   </h3>
                   <p className="text-blue-100">803-638-4779</p>
-                  <p className="text-sm text-blue-200 mt-1">Emergency Line</p>
+                  <p className="text-sm text-blue-200 mt-1">
+                    {t.contact.info.emergency}
+                  </p>
                 </div>
               </div>
             </div>
@@ -1234,7 +1254,7 @@ const Contact = () => {
                   </h3>
                   <p className="text-blue-100">Info@novainsurancesc.com</p>
                   <p className="text-sm text-blue-200 mt-1">
-                    Response within 2 hours
+                    {t.contact.info.response}
                   </p>
                 </div>
               </div>
@@ -1251,7 +1271,7 @@ const Contact = () => {
                   </h3>
                   <p className="text-blue-100">{t.contact.info.hoursDetail}</p>
                   <p className="text-sm text-blue-200 mt-1">
-                    Claims support available
+                    {t.contact.info.availability}
                   </p>
                 </div>
               </div>

@@ -14,6 +14,10 @@ interface QuoteFormProps {
     sending: string;
     success: string;
     error: string;
+    namePlaceholder?: string;
+    emailPlaceholder?: string;
+    phonePlaceholder?: string;
+    messagePlaceholder?: string;
   };
   className?: string;
   variant?: "light" | "dark";
@@ -30,6 +34,10 @@ export default function QuoteForm({
     sending: "Sending...",
     success: "Thank you! We'll contact you within 24 hours.",
     error: "Something went wrong. Please try again.",
+    namePlaceholder: "John Doe",
+    emailPlaceholder: "john@example.com",
+    phonePlaceholder: "803-638-4779",
+    messagePlaceholder: "Tell us about your insurance needs...",
   },
   className = "",
   variant = "dark",
@@ -143,7 +151,7 @@ export default function QuoteForm({
           onChange={handleChange}
           required
           className={inputClasses}
-          placeholder="John Doe"
+          placeholder={translations.namePlaceholder || "John Doe"}
         />
       </div>
 
@@ -159,7 +167,7 @@ export default function QuoteForm({
           onChange={handleChange}
           required
           className={inputClasses}
-          placeholder="john@example.com"
+          placeholder={translations.emailPlaceholder || "john@example.com"}
         />
       </div>
 
@@ -175,7 +183,7 @@ export default function QuoteForm({
           onChange={handleChange}
           required
           className={inputClasses}
-          placeholder="803-638-4779"
+          placeholder={translations.phonePlaceholder || "803-638-4779"}
         />
       </div>
 
@@ -191,7 +199,10 @@ export default function QuoteForm({
           required
           rows={4}
           className={`${inputClasses} resize-none`}
-          placeholder="Tell us about your insurance needs..."
+          placeholder={
+            translations.messagePlaceholder ||
+            "Tell us about your insurance needs..."
+          }
         />
       </div>
 
