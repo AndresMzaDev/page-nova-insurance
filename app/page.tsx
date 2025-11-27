@@ -1076,20 +1076,19 @@ const Blog = () => {
       ...t.blog.post1,
       icon: AlertCircle,
       gradient: "from-red-500 to-pink-600",
-      image:
-        "/Imgenes Nova Isurance/Qué Hacer Después de un Accidente de Auto.jpg",
+      image: "/Imgenes Nova Isurance/QuéHacerDespuésdeunAccidentedeAuto.jpg",
     },
     {
       ...t.blog.post2,
       icon: FileText,
       gradient: "from-[#295371] to-[#1e3d52]",
-      image: "/Imgenes Nova Isurance/Entendiendo Tu Póliza de Seguro.jpg",
+      image: "/Imgenes Nova Isurance/EntendiendoTuPólizadeSeguro.jpg",
     },
     {
       ...t.blog.post3,
       icon: DollarSign,
       gradient: "from-[#158151] to-[#0f6b3d]",
-      image: "/Imgenes Nova Isurance/Cómo Reducir Tus Primas de Seguro.jpg",
+      image: "/Imgenes Nova Isurance/CómoReducirTus PrimasdeSeguro.jpg",
     },
   ];
 

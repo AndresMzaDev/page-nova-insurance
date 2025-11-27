@@ -546,7 +546,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/Imgenes Nova Isurance/Cuándo Revisar Tu Póliza .jpg"
+                  src="/Imgenes Nova Isurance/CuándoRevisarTuPóliza.jpg"
                   alt="Alma Padilla's Journey"
                   fill
                   className="object-cover"
@@ -593,7 +593,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/Imgenes Nova Isurance/Factores que Afectan tus Primas.jpg"
+                  src="/Imgenes Nova Isurance/FactoresqueAfectantusPrimas.jpg"
                   alt="NOVA Insurance Today"
                   fill
                   className="object-cover"
@@ -700,7 +700,7 @@ export default function AboutPage() {
 
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/Imgenes Nova Isurance/Entendiendo Tu Póliza de Seguro.jpg"
+              src="/Imgenes Nova Isurance/EntendiendoTuPólizadeSeguro.jpg"
               alt="Nova Insurance Team"
               fill
               className="object-cover"
@@ -747,7 +747,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/Imgenes Nova Isurance/Seguro para Conductores Adolescentes.jpg"
+                src="/Imgenes Nova Isurance/Seguropara ConductoresAdolescentes.jpg"
                 alt="Community Commitment"
                 fill
                 className="object-cover"
