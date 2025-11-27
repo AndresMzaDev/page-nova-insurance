@@ -1108,10 +1108,16 @@ const Blog = () => {
             >
               <div className="h-48 relative overflow-hidden bg-gray-200">
                 <Image
-                  src={post.image}
+                  src={post.image
+                    .split("/")
+                    .map((part, i) =>
+                      i === 0 ? part : encodeURIComponent(part)
+                    )
+                    .join("/")}
                   alt={post.title}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  unoptimized
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 z-10"></div>
               </div>

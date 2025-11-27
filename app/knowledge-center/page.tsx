@@ -345,10 +345,11 @@ export default function KnowledgeCenterPage() {
                     {topic.image ? (
                       <Image
                         /* @ts-ignore */
-                        src={topic.image}
+                        src={topic.image.split('/').map((part, i) => i === 0 ? part : encodeURIComponent(part)).join('/')}
                         alt={language === "en" ? topic.titleEn : topic.title}
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        unoptimized
                       />
                     ) : (
                       <div className="absolute inset-0 bg-gradient-to-br from-[#295371] to-[#158151] flex items-center justify-center">
