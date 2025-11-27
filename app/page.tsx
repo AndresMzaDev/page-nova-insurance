@@ -1052,21 +1052,6 @@ const About = () => {
   );
 };
 
-// Helper function to properly encode image URLs with spaces and special characters
-const encodeImagePath = (path: string): string => {
-  if (!path) return path;
-  // Split by / and encode each part except the first empty string (for absolute paths)
-  const parts = path.split("/");
-  return parts
-    .map((part, index) => {
-      // Keep the first empty part (for absolute paths starting with /)
-      if (index === 0 && part === "") return "";
-      // Encode the rest of the parts
-      return encodeURIComponent(part);
-    })
-    .join("/");
-};
-
 const Blog = () => {
   const { t } = useLanguage();
   const [ref, isVisible] = useInView(0.2);
@@ -1121,12 +1106,10 @@ const Blog = () => {
               } ${isVisible ? "visible" : ""}`}
             >
               <div className="h-48 relative overflow-hidden bg-gray-200">
-                <Image
-                  src={encodeImagePath(post.image)}
+                <img
+                  src={post.image}
                   alt={post.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  unoptimized
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 z-10"></div>
               </div>

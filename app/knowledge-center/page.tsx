@@ -37,21 +37,6 @@ const iconMap: { [key: string]: React.ComponentType<any> } = {
 
 import { useLanguageDetection } from "../hooks/useLanguageDetection";
 
-// Helper function to properly encode image URLs with spaces and special characters
-const encodeImagePath = (path: string): string => {
-  if (!path) return path;
-  // Split by / and encode each part except the first empty string (for absolute paths)
-  const parts = path.split("/");
-  return parts
-    .map((part, index) => {
-      // Keep the first empty part (for absolute paths starting with /)
-      if (index === 0 && part === "") return "";
-      // Encode the rest of the parts
-      return encodeURIComponent(part);
-    })
-    .join("/");
-};
-
 export default function KnowledgeCenterPage() {
   const { language, setLanguage } = useLanguageDetection();
 
@@ -358,13 +343,11 @@ export default function KnowledgeCenterPage() {
                   <div className="h-48 relative overflow-hidden bg-gray-200">
                     {/* @ts-ignore */}
                     {topic.image ? (
-                      <Image
+                      <img
                         /* @ts-ignore */
-                        src={encodeImagePath(topic.image)}
+                        src={topic.image}
                         alt={language === "en" ? topic.titleEn : topic.title}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-110"
-                        unoptimized
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     ) : (
                       <div className="absolute inset-0 bg-gradient-to-br from-[#295371] to-[#158151] flex items-center justify-center">
