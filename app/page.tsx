@@ -1052,6 +1052,21 @@ const About = () => {
   );
 };
 
+// Helper function to properly encode image URLs with spaces and special characters
+const encodeImagePath = (path: string): string => {
+  if (!path) return path;
+  // Split by / and encode each part except the first empty string (for absolute paths)
+  const parts = path.split("/");
+  return parts
+    .map((part, index) => {
+      // Keep the first empty part (for absolute paths starting with /)
+      if (index === 0 && part === "") return "";
+      // Encode the rest of the parts
+      return encodeURIComponent(part);
+    })
+    .join("/");
+};
+
 const Blog = () => {
   const { t } = useLanguage();
   const [ref, isVisible] = useInView(0.2);
@@ -1108,12 +1123,7 @@ const Blog = () => {
             >
               <div className="h-48 relative overflow-hidden bg-gray-200">
                 <Image
-                  src={post.image
-                    .split("/")
-                    .map((part, i) =>
-                      i === 0 ? part : encodeURIComponent(part)
-                    )
-                    .join("/")}
+                  src={encodeImagePath(post.image)}
                   alt={post.title}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"

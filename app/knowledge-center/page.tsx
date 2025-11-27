@@ -37,6 +37,21 @@ const iconMap: { [key: string]: React.ComponentType<any> } = {
 
 import { useLanguageDetection } from "../hooks/useLanguageDetection";
 
+// Helper function to properly encode image URLs with spaces and special characters
+const encodeImagePath = (path: string): string => {
+  if (!path) return path;
+  // Split by / and encode each part except the first empty string (for absolute paths)
+  const parts = path.split("/");
+  return parts
+    .map((part, index) => {
+      // Keep the first empty part (for absolute paths starting with /)
+      if (index === 0 && part === "") return "";
+      // Encode the rest of the parts
+      return encodeURIComponent(part);
+    })
+    .join("/");
+};
+
 export default function KnowledgeCenterPage() {
   const { language, setLanguage } = useLanguageDetection();
 
@@ -345,7 +360,7 @@ export default function KnowledgeCenterPage() {
                     {topic.image ? (
                       <Image
                         /* @ts-ignore */
-                        src={topic.image.split('/').map((part, i) => i === 0 ? part : encodeURIComponent(part)).join('/')}
+                        src={encodeImagePath(topic.image)}
                         alt={language === "en" ? topic.titleEn : topic.title}
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -362,7 +377,9 @@ export default function KnowledgeCenterPage() {
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-xs text-gray-500 font-medium">
                         {/* @ts-ignore */}
-                        {language === "en" ? topic.categoryEn : topic.categoryEs}
+                        {language === "en"
+                          ? topic.categoryEn
+                          : topic.categoryEs}
                       </span>
                       <span className="text-xs bg-[#295371]/10 text-[#295371] px-2 py-1 rounded-full font-medium">
                         {topic.readTime} {t[language].minRead}
