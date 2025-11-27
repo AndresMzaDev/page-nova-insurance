@@ -112,7 +112,7 @@ export default function QuoteForm({
 
   return (
     <form
-      action={`https://formsubmit.co/${email}`}
+      action={`https://formsubmit.co/2b77c074ac18d4a7c9b2c2db3b612786`}
       method="POST"
       onSubmit={handleSubmit}
       className={`space-y-6 ${className}`}

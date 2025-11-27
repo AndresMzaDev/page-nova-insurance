@@ -17,8 +17,6 @@ import {
   CheckCircle,
   Facebook,
   Instagram,
-  Twitter,
-  Linkedin,
 } from "lucide-react";
 import { useLanguageDetection } from "../hooks/useLanguageDetection";
 
@@ -585,9 +583,9 @@ export default function TermsPage() {
                 <div className="flex-shrink-0 p-3 bg-white/20 rounded-xl">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
-                <div>
+                <div className="min-w-0 flex-1">
                   <h4 className="font-bold text-lg mb-1">Email</h4>
-                  <p className="text-white/90">{t.contact.email}</p>
+                  <p className="text-white/90 break-words">{t.contact.email}</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -633,7 +631,7 @@ export default function TermsPage() {
               {/* Social Media */}
               <div className="flex items-center space-x-4">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/profile.php?id=61582774041378"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
@@ -642,31 +640,13 @@ export default function TermsPage() {
                   <Facebook className="h-5 w-5 text-white" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/novainsurancesc/?igsh=MTMyMDU1aWxiejg0ag%3D%3D&utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
                   aria-label="Instagram"
                 >
                   <Instagram className="h-5 w-5 text-white" />
-                </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="h-5 w-5 text-white" />
-                </a>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="h-5 w-5 text-white" />
                 </a>
               </div>
             </div>
@@ -709,7 +689,7 @@ export default function TermsPage() {
                   : "Servicios de Seguros"}
               </h3>
               <ul className="space-y-2 text-gray-400 mb-6">
-                {language === "en"
+                {(language === "en"
                   ? [
                       "Auto Insurance",
                       "Motorcycle Insurance",
@@ -727,12 +707,13 @@ export default function TermsPage() {
                       "Responsabilidad General",
                       "Seguro para Inquilinos",
                       "Seguro para Propietarios",
-                    ].map((service, idx) => (
-                      <li key={idx} className="flex items-center">
-                        <CheckCircle className="h-4 w-4 mr-2 text-blue-400" />
-                        <span className="text-sm">{service}</span>
-                      </li>
-                    ))}
+                    ]
+                ).map((service, idx) => (
+                  <li key={idx} className="flex items-center">
+                    <CheckCircle className="h-4 w-4 mr-2 text-blue-400" />
+                    <span className="text-sm">{service}</span>
+                  </li>
+                ))}
               </ul>
               <h4 className="font-bold text-base mb-3 text-gray-300">
                 {language === "en"
@@ -740,7 +721,7 @@ export default function TermsPage() {
                   : "Servicios Adicionales"}
               </h4>
               <ul className="space-y-2 text-gray-400">
-                {language === "en"
+                {(language === "en"
                   ? [
                       "DMV Services (title transfers, tags, plates, duplicates, etc.)",
                       "Notary Services",
@@ -748,12 +729,13 @@ export default function TermsPage() {
                   : [
                       "Servicios del DMV (transferencias de título, etiquetas, placas, duplicados, etc.)",
                       "Servicios Notariales",
-                    ].map((service, idx) => (
-                      <li key={idx} className="flex items-center">
-                        <CheckCircle className="h-4 w-4 mr-2 text-blue-400" />
-                        <span className="text-sm">{service}</span>
-                      </li>
-                    ))}
+                    ]
+                ).map((service, idx) => (
+                  <li key={idx} className="flex items-center">
+                    <CheckCircle className="h-4 w-4 mr-2 text-blue-400" />
+                    <span className="text-sm">{service}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

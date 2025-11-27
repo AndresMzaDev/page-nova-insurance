@@ -29,8 +29,6 @@ import {
   Star,
   Facebook,
   Instagram,
-  Twitter,
-  Linkedin,
 } from "lucide-react";
 
 const translations = {
@@ -1310,7 +1308,7 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex items-center space-x-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61582774041378"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
@@ -1319,31 +1317,13 @@ const Footer = () => {
                 <Facebook className="h-5 w-5 text-white" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/novainsurancesc/?igsh=MTMyMDU1aWxiejg0ag%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5 text-white" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5 text-white" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-gray-800 rounded-lg hover:bg-[#295371] transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5 text-white" />
               </a>
             </div>
           </div>
