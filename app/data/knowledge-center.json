@@ -13,7 +13,7 @@
       "excerpt": "Pasos esenciales para protegerte y presentar un reclamo exitoso después de un accidente vehicular.",
       "excerptEn": "Essential steps to protect yourself and file a successful claim after a car accident.",
       "icon": "AlertCircle",
-      "image": "/Imgenes Nova Isurance/QuéHacerDespuésdeunAccidentedeAuto.jpg"
+      "image": "/Imgenes Nova Isurance/QueHacerDespuesdeunAccidentedeAuto.jpg"
     },
     {
       "id": "understanding-your-policy",
@@ -28,7 +28,7 @@
       "excerpt": "Aprende a leer y entender los términos de tu póliza de seguro para maximizar tus beneficios.",
       "excerptEn": "Learn how to read and understand your insurance policy terms to maximize your coverage benefits.",
       "icon": "FileText",
-      "image": "/Imgenes Nova Isurance/EntendiendoTuPólizadeSeguro.jpg"
+      "image": "/Imgenes Nova Isurance/EntendiendoTuPolizadeSeguro.jpg"
     },
     {
       "id": "lower-your-premiums",
@@ -43,7 +43,7 @@
       "excerpt": "Estrategias comprobadas para reducir costos sin sacrificar la protección que necesitas.",
       "excerptEn": "Proven strategies to reduce costs without sacrificing the protection you need.",
       "icon": "DollarSign",
-      "image": "/Imgenes Nova Isurance/CómoReducirTus PrimasdeSeguro.jpg"
+      "image": "/Imgenes Nova Isurance/ComoReducirTus PrimasdeSeguro.jpg"
     },
     {
       "id": "types-of-coverage-explained",
@@ -73,7 +73,7 @@
       "excerpt": "Entiende cómo funcionan los deducibles y cómo elegir el que mejor se adapte a tu situación.",
       "excerptEn": "Understand how deductibles work and how to choose the one that best fits your situation.",
       "icon": "TrendingUp",
-      "image": "/Imgenes Nova Isurance/CómoElegirelDeducibleCorrecto.jpg"
+      "image": "/Imgenes Nova Isurance/ComoElegirelDeducibleCorrecto.jpg"
     },
     {
       "id": "filing-insurance-claim",
@@ -88,7 +88,7 @@
       "excerpt": "Proceso paso a paso para presentar un reclamo de seguro de manera eficiente y obtener resultados rápidos.",
       "excerptEn": "Step-by-step process to file an insurance claim efficiently and get quick results.",
       "icon": "CheckCircle",
-      "image": "/Imgenes Nova Isurance/RecopilalaDocumentaciónRequerida.jpg"
+      "image": "/Imgenes Nova Isurance/RecopilalaDocumentacionRequerida.jpg"
     },
     {
       "id": "factors-affecting-premiums",
@@ -133,7 +133,7 @@
       "excerpt": "Aprende a identificar y protegerte contra el fraude de seguros y estafas comunes.",
       "excerptEn": "Learn how to identify and protect yourself against insurance fraud and common scams.",
       "icon": "AlertCircle",
-      "image": "/Imgenes Nova Isurance/PrevencióndeFraudeenSeguros.jpg"
+      "image": "/Imgenes Nova Isurance/PrevenciondeFraudeenSeguros.jpg"
     },
     {
       "id": "when-to-review-policy",
@@ -148,7 +148,7 @@
       "excerpt": "Descubre los momentos clave en los que debes revisar y actualizar tu póliza de seguro.",
       "excerptEn": "Discover key moments when you should review and update your insurance policy.",
       "icon": "Clock",
-      "image": "/Imgenes Nova Isurance/CuándoRevisarTuPóliza.jpg"
+      "image": "/Imgenes Nova Isurance/CuandoRevisarTuPoliza.jpg"
     }
   ]
 }

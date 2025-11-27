@@ -546,7 +546,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/Imgenes Nova Isurance/CuándoRevisarTuPóliza.jpg"
+                  src="/Imgenes Nova Isurance/CuandoRevisarTuPoliza.jpg"
                   alt="Alma Padilla's Journey"
                   fill
                   className="object-cover"
@@ -700,7 +700,7 @@ export default function AboutPage() {
 
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/Imgenes Nova Isurance/EntendiendoTuPólizadeSeguro.jpg"
+              src="/Imgenes Nova Isurance/EntendiendoTuPolizadeSeguro.jpg"
               alt="Nova Insurance Team"
               fill
               className="object-cover"
